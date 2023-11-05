@@ -1,0 +1,554 @@
+{
+  "home": {
+    "welcome": "<Bienvenido/>",
+    "title": {
+      "word1": [
+        {
+          "letter": "S",
+          "className": "letter__name"
+        },
+        {
+          "letter": "o",
+          "className": "letter__name"
+        },
+        {
+          "letter": "y",
+          "className": "letter__name"
+        }
+      ],
+      "word2": [
+        {
+          "letter": "M",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        },
+        {
+          "letter": "x",
+          "className": "letter__name"
+        }
+      ],
+      "word3": [
+        {
+          "letter": "C",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "r",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "c",
+          "className": "letter__name"
+        },
+        {
+          "letter": "e",
+          "className": "letter__name"
+        },
+        {
+          "letter": "d",
+          "className": "letter__name"
+        },
+        {
+          "letter": "a",
+          "className": "letter__name"
+        }
+      ]
+    },
+    "typewriterStrings": [
+      "Desarrollador Web",
+      "Desarrollador Frontend",
+      "Desarrollador Backend",
+      "Desarrollador Full Stack"
+    ],
+    "slogan": "Empoderando empresas en el mundo digital.",
+    "description": "En el dinámico escenario digital actual, las empresas buscan aplicaciones web ágiles y versátiles que se ajusten a sus demandas en evolución. Mi experiencia como desarrollador full-stack se traduce en la creación de soluciones especializadas, escalables y confiables, centradas en el usuario. Explora mi portafolio y descubre cómo puedo potenciar el éxito de tu negocio con soluciones a medida.",
+    "buttonText": "COMENZAR AHORA"
+  },
+  "navbar": {
+    "links": [
+      {
+        "to": "/",
+        "text": "Inicio"
+      },
+      {
+        "to": "/about",
+        "text": "Sobre mi"
+      },
+      {
+        "to": "/skills",
+        "text": "Habilidades"
+      },
+      {
+        "to": "/projects",
+        "text": "Proyectos"
+      },
+      {
+        "to": "/contact",
+        "text": "Contacto"
+      }
+    ]
+  },
+  "contact": {
+    "title": "¡Trabajemos Juntos!",
+    "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas.",
+    "email": "cereceda1991@gmail.com",
+    "address": "Comas, Lima, Perú",
+    "form": {
+      "fullNameLabel": "Nombre completo:",
+      "fullNamePlaceholder": "Ingresa un nombre",
+      "emailLabel": "Correo electrónico:",
+      "emailPlaceholder": "Ingresa un correo electrónico",
+      "messageLabel": "Mensaje:",
+      "messagePlaceholder": "Ingresa un mensaje",
+      "submitButton": "ENVIAR"
+    }
+  },
+  "footer": {
+    "visitorNumberText": "Eres el visitante N°",
+    "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados",
+    "title":"Testimonios: Voces de Experiencia",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Elizabeth León",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
+        "linkedinUrl": "https://www.linkedin.com/in/elizabethleonperez/",
+        "githubUrl": "https://github.com/ElizabethLeonPerez"
+      },
+      {
+        "id": 2,
+        "name": "Yenifer Ramírez",
+        "position": "Project Manager",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
+        "testimonial": "Recomiendo a Max con gratitud. Su iniciativa y habilidad para realizar un trabajo excepcional siempre impresionan. Como Project Manager, contar con él fue un verdadero plus para nuestro equipo.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
+        "linkedinUrl": "https://www.linkedin.com/in/yeniferrosana/",
+        "githubUrl": "https://github.com/yeniferrosana"
+      },
+      {
+        "id": 3,
+        "name": "Cristian Gomez",
+        "position": "Desarrollador Backend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
+        "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
+        "linkedinUrl": "https://www.linkedin.com/in/cristiangomezdev/",
+        "githubUrl": "https://github.com/cristiangomezdev"
+      },
+      {
+        "id": 4,
+        "name": "Erik Perez",
+        "position": "Director académico",
+        "country": "https://i.ibb.co/fxM91tK/MX.png",
+        "testimonial": "Max es un talento excepcional en el desarrollo web. Su habilidad para trabajar tanto en el front-end como en el back-end es impresionante. Siempre cumple con los plazos y produce un código de alta calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04BJ55FHSL-e5ce6dd816ec-512",
+        "linkedinUrl": "https://www.linkedin.com/in/erik-perez-alvarez/",
+        "githubUrl": ""
+      },
+      {
+        "id": 5,
+        "name": "Lorenzo Rueda",
+        "position": "Ingeniero de Software",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
+        "testimonial": "Max es un desarrollador altamente competente. Sus habilidades técnicas y su capacidad para resolver problemas son excepcionales. Siempre encuentra soluciones efectivas y entrega resultados de calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U055HNSNZC0-c4a5215a1474-512",
+        "linkedinUrl": "https://www.linkedin.com/in/lorenzo-rueda-582758263/",
+        "githubUrl": "https://github.com/zightcode"
+      },
+      {
+        "id": 6,
+        "name": "Lucia Pinna",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Max es un desarrollador muy talentoso. Su capacidad para comprender tanto el diseño como la implementación técnica es impresionante. Trabajar con él siempre ha sido una experiencia fluida y productiva.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U05C29Q39HB-0d27fa529f29-512",
+        "linkedinUrl": "https://www.linkedin.com/in/lucia-pinna/",
+        "githubUrl": ""
+      },
+      {
+        "id": 7,
+        "name": "Dario Elguero ",
+        "position": "Desarrollador Frontend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "He tenido el placer de colaborar con Max en varios proyectos de desarrollo. Su conocimiento y habilidades como desarrollador son sobresalientes. Siempre aporta soluciones técnicas sólidas y cumple con los requisitos del proyecto.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U04FMD0KRC1-466d09173211-512",
+        "linkedinUrl": "https://www.linkedin.com/in/dario-elguero/",
+        "githubUrl": "https://github.com/Dario-Elguero"
+      },
+      {
+        "id": 8,
+        "name": "Adlai Bermejo",
+        "position": "Administrador de espacio de trabajo",
+        "country": "https://i.ibb.co/fxM91tK/MX.png",
+        "testimonial": "Me atrevo a hacer una recomendación de Max, ya que es un profesional completamente dedicado a sus objetivos. Trabaja en sus habilidades día a día, se adapta con facilidad a los diferentes procesos y su mejora es notable en cortos lapsos de tiempo. Es un gran desarrollador destacado dentro de su generación.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04AWTHE7D2-41cc8d4d50e1-512",
+        "linkedinUrl": "https://www.linkedin.com/in/adlai-bermejo-785b15180/",
+        "githubUrl": ""
+      }
+      
+    ],
+    "chat":{
+      "title":"¡Comuniquémonos!",
+      "contentMessageInit":"Ingresa tu nombre",
+      "buttonInit":"Iniciar Chat",
+      "SenderSystem":"Sistema",
+      "MessageSystem":"se ha unido a la conversación",
+      "contentInput":"Escribe un mensaje"
+    }    
+  },
+  "skills": {
+    "completedText": "Habilidades adquiridas",
+    "inProgressText": "Aprendiendo nuevas herramientas",
+    "category": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobiles",
+      "programming_languages": "Lenguajes de Prog",
+      "version_control": "Control de Versiones",
+      "design": "Diseño",
+      "devops": "DevOps",
+      "data_visualization": "Visualización de datos"
+    }
+  },
+  "about": {
+    "name": "Soy Max Cereceda",
+    "aboutInfo": [
+      "Un apasionado desarrollador web, con una gran capacidad organizativa. Mi principal objetivo es superar las expectativas y lograr resultados excepcionales. Mejoro constantemente mis habilidades y me mantengo actualizado sobre los últimos avances en desarrollo web para asegurarme de estar a la vanguardia de la industria.",
+      "Además de mi dedicación al desarrollo web, tengo pasión por disfrutar de las puestas de sol y encontrar inspiración en paseos bajo la lluvia. Las películas de ciencia ficción me cautivan, la música electrónica me brinda una energía estimulante. También soy un ávido viajero, lo que me ha permitido obtener una perspectiva global y enriquecer mi visión del mundo.",
+      "Mi historial comprobado de logros, combinado con mi enfoque perfeccionista, habilidades para resolver problemas y mi constante dedicación para mantenerme al tanto de las últimas tendencias de la industria, me convierten en un candidato entusiasta y altamente valioso para tu equipo.",
+      "Estoy emocionado por la oportunidad de contribuir al éxito de tu empresa. Espero con ansias la posibilidad de colaborar y llevar nuestras ideas a nuevas alturas."
+    ],
+    "phrase": {
+      "title": "Una frase que uso a menudo es:",
+      "quote": "La tecnología no es nada. Lo importante es que tienes fe en las personas, que son básicamente buenas e inteligentes, y si les das herramientas, harán cosas maravillosas con ellas.",
+      "author": "Steve Jobs"
+    },
+    "paragraphs": [
+      {
+        "title": "Horas de teoría",
+        "time": 500
+      },
+      {
+        "title": "Horas de práctica",
+        "time": 1440
+      },
+      {
+        "title": "Empresas satisfechas",
+        "time": 10
+      },
+      {
+        "title": "Año de experiencia acumulada",
+        "time": 1
+      },
+      {
+        "title": "Proyectos completados",
+        "time": 25
+      }
+    ],
+    "education": {
+      "title": "EDUCACIÓN",
+      "institutions": [
+        {
+          "institution": "ACADEMLO",
+          "link": "https://www.academlo.com/",
+          "date": "(Noviembre 2022 - Mayo 2023)",
+          "degree": "Desarrollador Web Full Stack"
+        },
+        {
+          "institution": "UNIVERSIDAD PRIVADA DEL NORTE",
+          "link": "https://www.upn.edu.pe/",
+          "date": "(Marzo 2015-Pausado)",
+          "degree": "Ingeniería Industrial"
+        }
+      ]
+    },
+    "experience": {
+      "title": "EXPERIENCIA LABORAL",
+      "works": [
+        {
+          "positions": "TL & Desarrollador Web Full-Stack",
+          "company": "No-Country Tech",
+          "companyLink": "https://www.nocountry.tech/",
+          "time": "Marzo 2023 - Actualidad",
+          "detail": "En NoCountry, actualmente ocupo el puesto de Desarrollador Full-Stack en el equipo de desarrollo de aplicaciones web para la industria Fintech. En esta posición, he trabajado con el stack tecnológico MERN (MongoDB, Express, React y Node.js) para crear soluciones web de alta calidad. Mis principales responsabilidades incluyen participar en el diseño y desarrollo completo de aplicaciones web, tanto en el Backend como en el Frontend. Colaboro estrechamente con equipos multidisciplinarios para comprender los requisitos del proyecto y crear soluciones innovadoras y eficientes."
+        }
+      ]
+    }
+  },
+  "project": {
+    "title": "Mis Proyectos",
+    "projects": [
+      {
+        "id": 1,
+        "title": "Aplicación de Clima",
+        "image": "/proyectos/Weather.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de esta aplicación se utilizaron las siguientes tecnologías: React.js, React-Router, Axios y CSS3. Con la ayuda de estas herramientas, pude crear una interfaz de usuario atractiva e interactiva. Además, aproveché la capacidad de geolocalización para consumir una API meteorológica y proporcionar información meteorológica precisa y actualizada en función de la ubicación del usuario. Esta funcionalidad adicional le permite obtener datos precisos sobre temperatura, condiciones climáticas y pronósticos para ofrecer una experiencia personalizada.",
+        "demoUrl": "https://max-c-app-weather.netlify.app",
+        "codeUrl": "https://github.com/cereceda1991/weather-app.git"
+      },
+      {
+        "id": 2,
+        "title": "Rick and Morty App",
+        "image": "/proyectos/RickandMorty.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Al desarrollar esta aplicación, utilicé React.js, Vite.js, React Router, Axios, UseForm, UseNavigate y CSS3. Fue emocionante trabajar con estas tecnologías para crear una experiencia interactiva y dinámica. Una de las características sobresalientes de mi desarrollo fue la integración de una API de Rick and Morty, que me permitió obtener la información necesaria para mostrarla en la aplicación. Para administrar y representar los datos de manera eficiente, aproveché los ganchos useState y useEffect. Además, me concentré en mejorar la interfaz de usuario implementando animaciones fluidas usando CSS3. Esto agregó un toque visual atractivo y agradable para los usuarios. Estoy orgulloso del resultado final de esta aplicación, ya que logré equilibrar la funcionalidad, la estética y la experiencia del usuario.",
+        "demoUrl": "https://rick-and-morty-app-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/finallyRickandMorty.git"
+      },
+      {
+        "id": 3,
+        "title": "Aplicación Pokedex",
+        "image": "/proyectos/Pokedex.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Al desarrollar esta aplicación, utilicé React.js, Vite.js, React Router, Axios, UseForm, UseNavigate, CSS3 y Redux Toolkit. Además, decidí aprovechar la API de Pokémon para obtener los datos necesarios. Fue un desafío emocionante trabajar con todas estas tecnologías y herramientas. Gracias a React.js y Vite.js, pude crear una interfaz de usuario fluida y altamente receptiva que brinda una experiencia agradable para los usuarios. Usé React Router para administrar las rutas y la navegación dentro de la aplicación. Con Axios, pude realizar solicitudes a la API de Pokémon y obtener la información relevante para mostrar en mi aplicación. Además, decidí incorporar el kit de herramientas Redux para manejar el estado global de mi aplicación de manera organizada y escalable. Esto me permitió centralizar y compartir la información entre los diferentes componentes de manera eficiente.",
+        "demoUrl": "https://my-pokedex-max-cereceda.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/Pokedex_App"
+      },
+      {
+        "id": 4,
+        "title": "Ecommerce",
+        "image": "/proyectos/Ecommerce.webp",
+        "technologies": [
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "Vite",
+            "image": "/tecnologias/Vite.png"
+          },
+          {
+            "name": "axios",
+            "image": "/tecnologias/Axios.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de mi tienda en línea, mi objetivo principal era crear una plataforma de comercio electrónico completa y funcional que brindara a los usuarios una experiencia excepcional. Me concentré en brindar funciones como navegación de productos, administración de carritos de compras, pedidos y administración de perfiles de manera eficiente. Para garantizar la seguridad y protección de los datos de los usuarios, implementé un sistema de protección de rutas que requería autenticación de usuario y contraseña para acceder a ciertas secciones de la plataforma. Esto proporcionó una capa adicional de seguridad y privacidad para los usuarios al impulsar el acceso no autorizado a ciertas áreas. Al desarrollar esta plataforma, hice uso de las tecnologías con las que tenía experiencia en ese momento. Esto me permitió trabajar eficientemente con los productos de mi tienda y crear una plataforma completa y funcional. Estoy muy satisfecho con el resultado final, ya que pude equilibrar de manera efectiva la gestión de datos con la experiencia del usuario, brindando una plataforma intuitiva y segura para realizar compras en línea. La implementación de la protección de rutas y el uso adecuado de las tecnologías disponibles contribuyeron en gran medida a lograr un experiencia de usuario satisfactoria. Estoy orgulloso del resultado final y de cómo pude lograr mi objetivo de crear una tienda en línea segura, funcional y atractiva para los usuarios.",
+        "demoUrl": "https://my-ecommerce-react-maxc.netlify.app/#/",
+        "codeUrl": "https://github.com/cereceda1991/ecommerce-react.git"
+      },
+      {
+        "id": 5,
+        "title": "Drum Sounds",
+        "image": "/proyectos/DrumSounds.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "JavaScript",
+            "image": "/tecnologias/JavaScript.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "Durante el desarrollo de esta aplicación, utilicé HTML, CSS y JavaScript estándar. Esta vez, decidí crear una aplicación de batería que funcione con las teclas del teclado. Cada vez que presionaba una tecla, se reproducía un sonido de batería único. Fue muy divertido trabajar en esta aplicación. Me sumergí en la creación de la interfaz de usuario usando HTML para estructurar los elementos de la batería y CSS para darles estilo y hacer que se vean geniales. Luego usé JavaScript estándar para agregar la funcionalidad clave de la aplicación. Fue emocionante asignar sonidos de batería específicos a cada tecla correspondiente usando eventos de teclado. Cuando presionaba una tecla, se reproducía el sonido asociado, brindando una experiencia divertida e interactiva. El desarrollo de esta aplicación me permitió explorar la interacción entre HTML, CSS y JavaScript, y realmente disfruté creando una experiencia lúdica para los usuarios. Estoy muy contento con el resultado final y con lo divertido que fue el proceso de desarrollo. Espero que los usuarios disfruten tocando la batería virtual tanto como yo disfruté creándola.",
+        "demoUrl": "https://sounds-drums-maxc.netlify.app/",
+        "codeUrl": "https://github.com/cereceda1991/Drum-Sounds.git"
+      },
+      {
+        "id": 6,
+        "title": "Verbify",
+        "image": "/proyectos/Verbify.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "El desarrollo de Verbify fue un emocionante proyecto colaborativo. Usamos TypeScript, Redux, React, Next.js y React Router para crear una aplicación robusta y eficiente. Nuestro objetivo era abordar la barrera del idioma en el lugar de trabajo, específicamente el inglés. Verbify ofrece lecciones interactivas, ejercicios de gramática, pruebas de vocabulario y la posibilidad de practicar conversaciones en inglés. Trabajar con colegas de diferentes disciplinas fue un desafío gratificante y estoy orgulloso del impacto de Verbify en la mejora de las habilidades de inglés para mejores oportunidades laborales. Fue un proyecto emocionante que mostró el poder de la colaboración y la tecnología.",
+        "demoUrl": "https://verbify.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/c10-44-m-mern"
+      },
+      {
+        "id": 7,
+        "title": "CookMeal",
+        "image": "/proyectos/CookMeal.webp",
+        "technologies": [
+          {
+            "name": "HTML",
+            "image": "/tecnologias/HTML.png"
+          },
+          {
+            "name": "CSS",
+            "image": "/tecnologias/CSS.png"
+          },
+          {
+            "name": "TypeScript",
+            "image": "/tecnologias/TypeScript.png"
+          },
+          {
+            "name": "NextJs",
+            "image": "/tecnologias/NextJs.png"
+          },
+          {
+            "name": "Redux",
+            "image": "/tecnologias/Redux.png"
+          },
+          {
+            "name": "React",
+            "image": "/tecnologias/React.png"
+          },
+          {
+            "name": "Tailwind",
+            "image": "/tecnologias/Tailwind.png"
+          }
+        ],
+        "category": "frontend",
+        "content": "CookMeal es una emocionante aplicación colaborativa que utiliza IA para crear recetas personalizadas. Usamos la API de OpenAI para generar una variedad de recetas basadas en indicaciones simples proporcionadas por los usuarios. La aplicación se crea con la pila MERN, que incluye MongoDB, Express, React y Node.js. Esta combinación nos permite crear una aplicación web completa y eficiente con una base de datos flexible, una API robusta y una experiencia de usuario dinámica. La colaboración desempeñó un papel clave en el proceso de desarrollo, aprovechando las habilidades y el conocimiento de cada miembro del equipo. La integración de AI en CookMeal brinda a los usuarios una amplia gama de opciones culinarias adaptadas a sus gustos y preferencias. Estoy encantado con el resultado final y el potencial de CookMeal para mejorar la experiencia culinaria a través de tecnología innovadora y colaboración humana.",
+        "demoUrl": "https://cookmeal.vercel.app/",
+        "codeUrl": "https://github.com/No-Country/s8-17-ft-node-react"
+      }
+    ]
+  },
+  "sidebar": {
+    "socials": [
+      {
+        "className": "li__linkedin",
+        "label": "Linkedin",
+        "icon": "FaLinkedin",
+        "url": "https://www.linkedin.com/in/maxcereceda/"
+      },
+      {
+        "className": "li__github",
+        "label": "Github",
+        "icon": "FaGithub",
+        "url": "https://github.com/cereceda1991"
+      },
+      {
+        "className": "li__email",
+        "label": "Email",
+        "icon": "HiOutlineMail",
+        "url": "mailto:cereceda1991@gmail.com"
+      },
+      {
+        "className": "li__cv",
+        "label": "Mi Cv",
+        "icon": "BsFillPersonLinesFill",
+        "url": "/cv/CvMaxCerecedaEspañol.pdf"
+      }
+    ]
+  }
+}

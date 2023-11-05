@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1b1b1b;
+  --text-color: #ffffff;
+  --text-title: rgba(28, 28, 28, 0.74);
+  --main-color: #0c1e44;
+  --secondary-color: #ef6d58;
+  --border-color: #b1b1b1;
+  --border-color-secondary: #ff1949;
+  --background-gradient: linear-gradient(
+    90deg,
+    rgba(212, 4, 47, 1) 0%,
+    rgba(255, 25, 73, 1) 100%
+  );
+  --background-gradient-secondary: linear-gradient(to right, #414143, #0009);
+  --custom-box-shadow: 1px 4px 20px -2px rgba(0, 0, 0, 0.1);
+}
+
+body.darkmode {
+  --background-color: #444654;
+  --text-color: #f7f7f8;
+  --main-color: #0008;
+  --border-color: #cfcfcf;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 56px;
+}
+h3 {
+  font-size: 40px;
+}
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+label {
+  font-size: 12px;
+}
+p {
+  font-size: 16px;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+  border: none;
+  border: 1px solid var(--border-color);
+  font-family: inherit;
+  background-color: inherit;
+  height: 59px;
+  color: inherit;
+}
+
+select {
+  width: max-content;
+  height: 40px;
+  text-transform: uppercase;
+  font-family: inherit;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+select option {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+ul,
+li {
+  list-style: none;
+  font-size: 18px;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+}
