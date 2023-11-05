@@ -10,7 +10,7 @@ export const DataApi = () => {
   useEffect(() => {
     if (!languageData) {
       const url =
-        'https://raw.githubusercontent.com/cereceda1991/myportfolio-react/main/src/languages/data_es.json';
+        'https://raw.githubusercontent.com/cereceda1991/new_portfolio/main/src/languages/data_es.json';
       axios
         .get(url)
         .then((response) => {
