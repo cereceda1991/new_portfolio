@@ -1,12 +1,14 @@
-/* Estilos generales para el navbar */
 .navbar {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
   color: #fff;
   height: 64px;
+  z-index: 5;
+  backdrop-filter: blur(10px) brightness(70%) saturate(120%);
 }
 
 .nav-links {

@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
-import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { useState } from 'react';
+import { FaBars } from 'react-icons/fa';
+import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -13,10 +13,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <h3>MC</h3>
-        <p>Developer</p>
+        <h3>
+          <Link to="/">
+            M<sub>C</sub>
+          </Link>
+        </h3>
       </div>
-      <ul className={showMenu ? "nav-links mobile" : "nav-links"}>
+      <ul className={showMenu ? 'nav-links mobile' : 'nav-links'}>
         <li>
           <Link to="/">Inicio </Link>
         </li>

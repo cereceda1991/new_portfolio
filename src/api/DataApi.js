@@ -25,3 +25,20 @@ export const DataApi = () => {
 
   return languageData;
 };
+// import { useDispatch, useSelector } from 'react-redux';
+// import { setLanguageData } from '../store/languageSlice';
+// import { useEffect } from 'react';
+// import localData from '../languages/data_es.json'; // Ruta local al archivo JSON
+
+// export const DataApi = () => {
+//   const languageData = useSelector((state) => state.language);
+//   const dispatch = useDispatch();
+
+//   useEffect(() => {
+//     if (!languageData) {
+//       dispatch(setLanguageData(localData));
+//     }
+//   }, [languageData, dispatch]);
+
+//   return languageData;
+// };
