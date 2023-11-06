@@ -263,14 +263,15 @@
           "institution": "ACADEMLO",
           "link": "https://www.academlo.com/",
           "date": "(Noviembre 2022 - Mayo 2023)",
-          "degree": "Desarrollo Web Full Stack JavaScript"
+          "degree": "Desarrollo Web Full Stack JavaScript",
+          "logo":"https://raw.githubusercontent.com/cereceda1991/new_portfolio/main/src/assets/Home/Academlo.svg"
         },
         {
           "institution": "UNIVERSIDAD PRIVADA DEL NORTE",
           "link": "https://www.upn.edu.pe/",
           "date": "(Marzo 2015-Presente)",
-          "degree": "Ingeniería de Sistemas"
-        }
+          "degree": "Ingeniería de Sistemas",
+          "logo":"https://raw.githubusercontent.com/cereceda1991/new_portfolio/main/src/assets/Home/logo_upn.svg"        }
       ]
     }
   },

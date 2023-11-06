@@ -59,6 +59,10 @@
   flex-direction: column;
 }
 
+.institution__logo {
+  width: 100px;
+}
+
 @media (min-width: 768px) {
   .info__education {
     padding: 0 6rem;

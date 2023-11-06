@@ -12,10 +12,9 @@ const EducationInfo = ({ educationInfo }) => {
         <div className="info__education--details">
           {educationInfo.institutions.map((info, index) => (
             <div key={index}>
+              <img className="institution__logo" src={info.logo} alt="logo" />
+              <a href={info.link} target="_blank" rel="noopener noreferrer"></a>
               <p>{info.degree}</p>
-              <a href={info.link} target="_blank" rel="noopener noreferrer">
-                <p>{info.institution}</p>
-              </a>
               <p>{info.date}</p>
             </div>
           ))}
