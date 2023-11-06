@@ -28,12 +28,13 @@
   text-align: center;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .footer__copyright {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    background-color: red;
   }
 
   .footer__count-visit {

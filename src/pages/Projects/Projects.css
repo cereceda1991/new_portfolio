@@ -1,20 +1,18 @@
-.container__popular {
+.container__projects {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-wrap: wrap;
   gap: 30px;
-  text-align: center;
   padding: 1rem;
+  text-align: center;
 }
 
-.container__popular h4 {
+.container__projects h4 {
   font-weight: 300;
   padding-bottom: 15px;
   position: relative;
 }
 
-.container__popular h4::before {
+.container__projects h4::before {
   background: var(--secondary-color);
   bottom: 0;
   content: '';
@@ -25,7 +23,7 @@
   width: 40px;
 }
 
-.container__popular h4::after {
+.container__projects h4::after {
   background: var(--secondary-color);
   bottom: 0;
   content: '';
@@ -34,11 +32,4 @@
   margin-left: 20px;
   position: absolute;
   width: 5px;
-}
-
-.card_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
 }

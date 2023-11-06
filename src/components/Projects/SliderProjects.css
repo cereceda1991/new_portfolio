@@ -1,0 +1,43 @@
+.cards_header {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.row_left,
+.row_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 24px;
+  background-color: var(--secondary-color);
+  color: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.slider_card {
+  padding: 1rem;
+}
+
+.card_content {
+  border-radius: 0px 0px 0px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  min-height: 580px;
+}
+
+.card_text {
+  display: grid;
+  gap: 20px;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .cards_container {
+    padding: 0 6rem;
+  }
+}

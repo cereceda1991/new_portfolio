@@ -1,0 +1,113 @@
+.container__footer {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 1rem;
+  text-align: left;
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 2160px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer__column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer__logo form {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer__logo input {
+  flex: 2;
+  font-family: inherit;
+  padding: 10px;
+  text-indent: 10px;
+  border-radius: 50px;
+}
+
+.footer__logo button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: grid;
+  place-content: center;
+  font-family: inherit;
+  background: #fff;
+  color: var(--secondary-color);
+  border: none;
+  width: 59px;
+  height: 59px;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.footer__column h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+.footer__column p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer__row:last-child {
+  background-color: #222;
+}
+
+.footer__row:last-child p {
+  font-size: 14px;
+  margin: 10px;
+}
+
+/* Estilos para la primera columna (debe medir el doble de ancho) */
+.double_width:first-child {
+  flex: 2;
+}
+
+/* Estilos para la última columna (debe medir el doble de ancho) */
+.double_width:last-child {
+  flex: 2;
+}
+
+.footer__row-copyright {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  border-top: outset 1px #333;
+  padding-top: 30px;
+}
+
+.footer__column-copyright {
+  display: flex;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .container__footer {
+    padding: 120px 80px 30px 80px;
+    gap: 120px;
+    max-width: 2160px;
+    margin: auto;
+  }
+}

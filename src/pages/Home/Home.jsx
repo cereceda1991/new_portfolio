@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 
-// Importaciones de componentes y estilos
 import Typewriter from 'typewriter-effect';
-import './Home.css';
 
 import { DataApi } from '../../api/DataApi';
 import ButtonModern from '../../components/ButtonModern/ButtonModern';
 import About from '../About/About';
 import CounterSection from '../../components/CounterSection/CounterSection';
-import Blog from '../../components/Blog/Blog';
+import Contact from '../Contact/Contact';
+import './Home.css';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
   const handleUpClick = () => {
@@ -29,8 +29,8 @@ const Home = () => {
     <>
       <main className="container__home">
         <section className="home__info">
-          <h5>{welcome}</h5>
-          <h2>
+          <h4>{welcome}</h4>
+          <h1>
             <span className="word">
               {title.word1.map((letter, index) => (
                 <span key={index} className={letter.className}>
@@ -52,9 +52,8 @@ const Home = () => {
                 </span>
               ))}
             </span>
-          </h2>
-
-          <h4>
+          </h1>
+          <h3>
             <Typewriter
               options={{
                 autoStart: true,
@@ -64,7 +63,7 @@ const Home = () => {
                 strings: typewriterStrings,
               }}
             />
-          </h4>
+          </h3>
           <p>{description}</p>
           <h4>
             <Link to="/projects" onClick={handleUpClick}>
@@ -75,7 +74,8 @@ const Home = () => {
       </main>
       <About />
       <CounterSection />
-      <Blog />
+      <Projects />
+      <Contact />
     </>
   );
 };

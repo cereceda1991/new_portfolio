@@ -5,12 +5,13 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  height: calc(100vh - 64px);
+  min-height: calc(100vh - 64px);
   padding: 1rem;
   background-image: url(../../assets/Home/fondo.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
+  max-height: 2160px;
 }
 
 .container__home::after {
@@ -48,7 +49,7 @@
   color: var(--secondary-color);
 }
 
-.home__info h5 {
+.home__info h4 {
   font-weight: 600;
   color: var(--Text_Light_Accent);
   line-height: 32px;
@@ -56,7 +57,7 @@
   text-transform: uppercase;
 }
 
-.home__info h2 {
+.home__info h1 {
   font-weight: 600;
   color: var(--Text_Light);
   font-style: normal;
@@ -72,6 +73,7 @@
 .home__info p {
   text-wrap: balance;
   padding-top: 1rem;
+  font-size: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -85,6 +87,6 @@
   }
 
   .home__info {
-    width: 70%;
+    width: 80%;
   }
 }
