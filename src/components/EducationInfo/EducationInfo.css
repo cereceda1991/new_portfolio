@@ -61,6 +61,7 @@
 
 .institution__logo {
   width: 100px;
+  height: 100px;
 }
 
 @media (min-width: 768px) {
