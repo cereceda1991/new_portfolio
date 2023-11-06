@@ -1,12 +1,9 @@
 .container_contactForm {
-  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 45px;
   padding: 1rem;
-  z-index: 2;
+  gap: 50px;
 }
 
 .container_contactForm-left {
@@ -22,7 +19,7 @@
 }
 
 .icon {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .card-content {
@@ -34,19 +31,6 @@
 .container_contactForm-right {
   display: grid;
   gap: 1rem;
-  border-radius: 5px;
-}
-
-.container_contactForm h2,
-.container_contactForm h1 {
-  letter-spacing: 1px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  margin-bottom: 15px;
-}
-
-.container_contactForm h1 {
-  font-size: 36px;
 }
 
 .container_contactForm h5 {
@@ -81,17 +65,12 @@
 .container_contactForm form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
-}
-
-.container_contactForm label {
-  font-weight: 600;
 }
 
 .container_contactForm input[type='text'],
@@ -99,10 +78,9 @@
 .container_contactForm input[type='tel'],
 .container_contactForm textarea {
   border: none;
-  box-shadow: inherit;
   border-bottom: 1px solid #e7e7e7;
-  padding: 0;
   outline: none;
+  text-indent: 1rem;
   resize: vertical;
   font-family: inherit;
   line-height: 24px;
@@ -111,7 +89,7 @@
 }
 
 .container_contactForm textarea {
-  min-height: 150px;
+  min-height: 100px;
   color: inherit;
 }
 
@@ -134,19 +112,15 @@
   cursor: pointer;
 }
 
-.send__icon {
-  font-size: 18px;
-}
-
 @media (min-width: 1200px) {
   .container_contactForm {
     margin: 120px;
+    justify-content: space-between;
     padding: 50px;
     gap: 15px;
   }
 
   .container_contactForm-left {
-    gap: 40px;
     flex: 1;
   }
 

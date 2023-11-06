@@ -5,13 +5,10 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  min-height: calc(100vh - 64px);
+  height: calc(100vh - 64px);
   padding: 1rem;
-  background-image: url(../../assets/Home/fondo.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  max-height: 2160px;
+  position: relative;
+  overflow: hidden;
 }
 
 .container__home::after {
@@ -21,8 +18,26 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   z-index: 1;
+}
+
+.container__home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../../assets/Home/fondo.webp);
+  background-size: cover;
+  transition: transform 0.9s;
+  z-index: -1;
+}
+
+.container__home:hover::before {
+  transform: scale(1.5);
+  overflow: hidden;
 }
 
 .home__info {
@@ -49,31 +64,33 @@
   color: var(--secondary-color);
 }
 
-.home__info h4 {
-  font-weight: 600;
-  color: var(--Text_Light_Accent);
-  line-height: 32px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
 .home__info h1 {
-  font-weight: 600;
   color: var(--Text_Light);
   font-style: normal;
   font-weight: 800;
   line-height: 80px;
   letter-spacing: 1px;
+  font-size: 56px;
 }
 
 .home__info h3 {
   font-weight: 600;
 }
 
+.home__info h4 {
+  font-weight: 600;
+  color: var(--Text_Light_Accent);
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  backdrop-filter: blur(2px);
+}
+
 .home__info p {
   text-wrap: balance;
   padding-top: 1rem;
   font-size: 20px;
+  backdrop-filter: blur(2px);
 }
 
 @media (min-width: 1024px) {

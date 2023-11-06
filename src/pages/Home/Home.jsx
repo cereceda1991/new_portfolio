@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 import Typewriter from 'typewriter-effect';
 
 import { DataApi } from '../../api/DataApi';
@@ -9,10 +7,13 @@ import CounterSection from '../../components/CounterSection/CounterSection';
 import Contact from '../Contact/Contact';
 import './Home.css';
 import Projects from '../Projects/Projects';
+import { useRef } from 'react';
 
 const Home = () => {
-  const handleUpClick = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const projectsRef = useRef(null);
+
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
   const languageData = DataApi();
@@ -65,16 +66,16 @@ const Home = () => {
             />
           </h3>
           <p>{description}</p>
-          <h4>
-            <Link to="/projects" onClick={handleUpClick}>
-              <ButtonModern content={buttonText} />
-            </Link>
+          <h4 onClick={scrollToProjects}>
+            <ButtonModern content={buttonText} />
           </h4>
         </section>
       </main>
       <About />
       <CounterSection />
-      <Projects />
+      <section ref={projectsRef} id="projects">
+        <Projects />
+      </section>
       <Contact />
     </>
   );

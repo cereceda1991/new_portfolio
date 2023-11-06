@@ -45,7 +45,9 @@ function ContactForm() {
           <FaEnvelopeOpen className="icon" />
           <div className="card-content">
             <h4>Enviar Correo</h4>
-            <p>cereceda1991@gmail.com</p>
+            <a href="mailto:cereceda1991@gmail.com">
+              <p>cereceda1991@gmail.com</p>
+            </a>
           </div>
         </div>
       </section>

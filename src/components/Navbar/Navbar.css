@@ -43,20 +43,19 @@
 }
 
 .menu-icon {
-  display: none; /* Oculta el icono por defecto */
+  display: none;
   cursor: pointer;
 }
 
-/* Media query para mostrar el menú hamburguesa en dispositivos móviles */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Oculta los enlaces del menú en dispositivos móviles */
+    display: none;
     flex-direction: column;
     align-items: flex-start;
   }
 
   .menu-icon {
-    display: block; /* Muestra el icono de hamburguesa */
+    display: block;
   }
 
   .nav-links.mobile {

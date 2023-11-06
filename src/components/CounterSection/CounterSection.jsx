@@ -5,8 +5,8 @@ const CounterSection = () => {
   return (
     <div className="counter__section">
       <Counter
-        initialValue={500}
-        incrementValue={25}
+        initialValue={1500}
+        incrementValue={50}
         label="Horas de teoría"
         speed={300}
         concat="+"

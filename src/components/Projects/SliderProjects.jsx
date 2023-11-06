@@ -20,6 +20,7 @@ const projectData = [
     id: 1,
     imagePath: image1,
     subtitle: 'Free Certify - Proyecto Código Abierto',
+    link: 'https://free-certify.vercel.app/',
     content:
       'Free-Certify es un proyecto full stack desarrollado con la pila MERN. Se trata de un proyecto de código abierto en el que he estado trabajando como freelancer. Su objetivo principal es simplificar la generación masiva y gratuita de certificados.',
   },
@@ -27,6 +28,8 @@ const projectData = [
     id: 2,
     imagePath: image2,
     subtitle: 'Intedsur - Empresa de Servicios Eléctricos ',
+    link: 'https://intedsur.vercel.app/',
+
     content:
       'Intedsur es un proyecto de desarrollo frontend en colaboración con un diseñador UI/UX. Se trata de un proyecto simple creado para un cliente específico, enfocado únicamente en la parte visual y la experiencia del usuario.',
   },
@@ -34,6 +37,8 @@ const projectData = [
     id: 3,
     imagePath: image3,
     subtitle: 'Inventra - Gestión Inteligente de Inventarios',
+    link: 'https://inventra-pe.vercel.app/',
+
     content:
       'Inventra es un proyecto full stack desarrollado con la pila MERN. Su objetivo principal es simplificar y agilizar la gestión de inventarios. Esta solución integral abarca desde el almacenamiento de datos hasta la interfaz de usuario, permitiendo una gestión eficiente y detallada de inventarios.',
   },
@@ -41,6 +46,8 @@ const projectData = [
     id: 4,
     imagePath: image4,
     subtitle: 'CookMeal - Recetas de Cocina Generadas con IA',
+    link: 'https://cookmeal.vercel.app/',
+
     content:
       'CookMeal es una aplicación que utiliza tecnologías como React, Tailwind y Next.js en el frontend, junto con MongoDB, Mongoose, Express y Node.js en el backend. Su enfoque se centra en generar recetas a través de la API de OpenAI, brindando una experiencia culinaria única y deliciosa.',
   },
@@ -48,6 +55,8 @@ const projectData = [
     id: 5,
     imagePath: image5,
     subtitle: 'Verbify - Plataforma Educativa de Inglés',
+    link: 'https://verbify.vercel.app/',
+
     content:
       'Verbify es una plataforma educativa enfocada en cursos de inglés, reconocida por su enfoque en el aprendizaje interactivo. Utiliza tecnologías como React, Next.js y CSS en el frontend para proporcionar una experiencia de usuario fluida. En el backend, se emplean Node.js, Express y MongoDB para una gestión eficiente de datos y creación de API, garantizando un almacenamiento escalable.',
   },
@@ -99,7 +108,9 @@ const SliderProjects = () => {
           {projectData.map((project) => (
             <section key={project.id} className="slider_card">
               <section className="card_content">
-                <img src={project.imagePath} alt="Blog" />
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  <img src={project.imagePath} alt="Blog" />
+                </a>
                 <div className="card_text">
                   <h4>{project.subtitle}</h4>
                   <p>{project.content}</p>
