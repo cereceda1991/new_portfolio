@@ -1,0 +1,44 @@
+.container__popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.container__popular h4 {
+  font-weight: 300;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.container__popular h4::before {
+  background: var(--secondary-color);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+.container__popular h4::after {
+  background: var(--secondary-color);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 50%;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}

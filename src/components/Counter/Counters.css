@@ -1,0 +1,5 @@
+.container_counters {
+    display: flex;
+    border-top: solid .5px #ccc;
+    padding-top: 1rem;
+}

@@ -1,0 +1,15 @@
+.counter {
+    position: relative;
+    width: auto;
+    display: grid;
+    margin: auto;
+    place-items: center;
+    z-index: 5;
+    width: 100%;
+}
+
+@media (min-width:1200px) {
+    .counter {
+        max-width: 250px;
+    }
+}

@@ -1,7 +1,7 @@
-import './About.css';
-
 import { DataApi } from '../../api/DataApi';
 import PersonalInfo from './PersonalInfo';
+
+import './About.css';
 
 const About = () => {
   const languageData = DataApi();
@@ -10,11 +10,11 @@ const About = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { name, aboutInfo } = languageData.about;
+  const { title, subtitle, aboutInfo } = languageData.about;
 
   return (
     <main className="container__about">
-      <PersonalInfo name={name} aboutInfo={aboutInfo} />
+      <PersonalInfo title={title} subtitle={subtitle} aboutInfo={aboutInfo} />
     </main>
   );
 };

@@ -42,7 +42,6 @@
   text-transform: uppercase;
 }
 
-/* Estilos para dispositivos móviles (menú hamburguesa) */
 .menu-icon {
   display: none; /* Oculta el icono por defecto */
   cursor: pointer;

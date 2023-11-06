@@ -1,12 +1,24 @@
-/* eslint-disable react/prop-types */
-const PersonalInfo = ({ name, aboutInfo }) => {
+import photo from '../../assets/Home/foto-home.webp';
+import Halo from '../../components/Halo/Halo';
+import './PersonalInfo.css';
+
+const PersonalInfo = ({ title, subtitle, aboutInfo }) => {
   return (
     <section className="info__personal">
-      <h3>{name}</h3>
-      <div className="aboutme__info">
-        {aboutInfo.map((info, index) => (
-          <p key={index}>{info}</p>
-        ))}
+      <div className="info__personal--image">
+        <Halo />
+        <img src={photo} alt="about_photo" />
+      </div>
+      <div className="info__personal--content">
+        <h4 className="info__personal--title">{title}</h4>
+        <h3>{subtitle}</h3>
+        <div className="info__personal--details">
+          {aboutInfo.map((info, index) => (
+            <p key={index} className="info__personal--paragraph">
+              {info}
+            </p>
+          ))}
+        </div>
       </div>
     </section>
   );

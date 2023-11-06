@@ -1,17 +1,16 @@
 .container__about {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   padding: 1rem;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   .container__about {
-    display: grid;
-    max-width: 1440px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+    max-width: 2160px;
     margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 0 6rem;
+    text-align: left;
   }
 }

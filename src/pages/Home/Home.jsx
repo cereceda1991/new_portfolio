@@ -7,6 +7,8 @@ import './Home.css';
 import { DataApi } from '../../api/DataApi';
 import ButtonModern from '../../components/ButtonModern/ButtonModern';
 import About from '../About/About';
+import CounterSection from '../../components/CounterSection/CounterSection';
+import Blog from '../../components/Blog/Blog';
 
 const Home = () => {
   const handleUpClick = () => {
@@ -72,6 +74,8 @@ const Home = () => {
         </section>
       </main>
       <About />
+      <CounterSection />
+      <Blog />
     </>
   );
 };
