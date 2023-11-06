@@ -28,7 +28,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { setLanguageData } from '../store/languageSlice';
 import { useEffect } from 'react';
-import localData from '../languages/data_es.json'; // Ruta local al archivo JSON
+import localData from '../languages/data_es.json';
 
 export const DataApi = () => {
   const languageData = useSelector((state) => state.language);

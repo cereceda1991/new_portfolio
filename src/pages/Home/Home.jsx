@@ -3,7 +3,6 @@ import Typewriter from 'typewriter-effect';
 import { DataApi } from '../../api/DataApi';
 import ButtonModern from '../../components/ButtonModern/ButtonModern';
 import About from '../About/About';
-import CounterSection from '../../components/CounterSection/CounterSection';
 import Contact from '../Contact/Contact';
 import './Home.css';
 import Projects from '../Projects/Projects';
@@ -72,7 +71,6 @@ const Home = () => {
         </section>
       </main>
       <About />
-      <CounterSection />
       <section ref={projectsRef} id="projects">
         <Projects />
       </section>

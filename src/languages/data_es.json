@@ -256,31 +256,20 @@
       }
     ],
     "education": {
-      "title": "EDUCACIÓN",
+      "title": "Mi Camino Educativo",
+      "subtitle":"Construyendo Conocimiento con Pasión y Disciplina",
       "institutions": [
         {
           "institution": "ACADEMLO",
           "link": "https://www.academlo.com/",
           "date": "(Noviembre 2022 - Mayo 2023)",
-          "degree": "Desarrollador Web Full Stack"
+          "degree": "Desarrollo Web Full Stack JavaScript"
         },
         {
           "institution": "UNIVERSIDAD PRIVADA DEL NORTE",
           "link": "https://www.upn.edu.pe/",
-          "date": "(Marzo 2015-Pausado)",
-          "degree": "Ingeniería Industrial"
-        }
-      ]
-    },
-    "experience": {
-      "title": "EXPERIENCIA LABORAL",
-      "works": [
-        {
-          "positions": "TL & Desarrollador Web Full-Stack",
-          "company": "No-Country Tech",
-          "companyLink": "https://www.nocountry.tech/",
-          "time": "Marzo 2023 - Actualidad",
-          "detail": "En NoCountry, actualmente ocupo el puesto de Desarrollador Full-Stack en el equipo de desarrollo de aplicaciones web para la industria Fintech. En esta posición, he trabajado con el stack tecnológico MERN (MongoDB, Express, React y Node.js) para crear soluciones web de alta calidad. Mis principales responsabilidades incluyen participar en el diseño y desarrollo completo de aplicaciones web, tanto en el Backend como en el Frontend. Colaboro estrechamente con equipos multidisciplinarios para comprender los requisitos del proyecto y crear soluciones innovadoras y eficientes."
+          "date": "(Marzo 2015-Presente)",
+          "degree": "Ingeniería de Sistemas"
         }
       ]
     }
