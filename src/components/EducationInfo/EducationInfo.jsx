@@ -1,4 +1,4 @@
-import photo from '../../assets/Home/fondo-dev.jpg';
+import photo from '../../assets/Home/fondo-dev.png';
 import './EducationInfo.css';
 
 const EducationInfo = ({ educationInfo }) => {
