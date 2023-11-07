@@ -57,17 +57,17 @@
   margin-bottom: 10px;
 }
 
-ul {
+.footer__column ul {
   list-style: none;
   padding: 0;
 }
 
-ul li {
+.footer__column ul li {
   margin-bottom: 5px;
 }
 
 .footer__column p {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 10px;
 }
 
@@ -105,7 +105,6 @@ ul li {
 
 @media (min-width: 768px) {
   .container__footer {
-    padding: 120px 80px 30px 80px;
     gap: 120px;
     max-width: 2160px;
     margin: auto;

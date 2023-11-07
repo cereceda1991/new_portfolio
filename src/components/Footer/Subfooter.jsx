@@ -1,7 +1,6 @@
 import { FiSend } from 'react-icons/fi';
-
 import './Subfooter.css';
-import { Link } from 'react-router-dom';
+
 const Subfooter = ({ copyRightText }) => {
   return (
     <footer className="container__footer">
@@ -9,19 +8,18 @@ const Subfooter = ({ copyRightText }) => {
         <div className="footer__column double_width">
           <div className="footer__logo">
             <p>
-              Mejoramos la vida de las personas y las relaciones humanas a
-              través de nuestra dedicación a la excelencia. Creemos en la
-              importancia de compartir conocimiento y reconocer logros. ¡Únete a
-              nosotros y obtén actualizaciones, noticias y apoyo excepcionales!*
-            </p>
-            <p>
-              Ingresa tu correo electrónico para recibir las últimas noticias,
-              soporte, y para aprovechar al máximo nuestra plataforma.
+              ¡Únete a nuestra comunidad y mantente informado! Introduce tu
+              correo electrónico para acceder a las últimas noticias, recibir
+              soporte y ser el primero en conocer nuestras últimas
+              publicaciones. Mantente al día con las últimas novedades para
+              descubrir contenido exclusivo y oportunidades especiales. ¡No te
+              pierdas nada, suscríbete hoy!
             </p>
             <form>
               <input
                 type="email"
                 placeholder="Ingresa tu correo electrónico aquí"
+                required
               />
               <button type="submit">
                 <FiSend />
@@ -30,7 +28,7 @@ const Subfooter = ({ copyRightText }) => {
           </div>
         </div>
         <div className="footer__column">
-          <h4>Enlaces</h4>
+          <h4>Enlaces del Sitio</h4>
           <ul>
             <li>Sobre mí</li>
             <li>Proyectos</li>
@@ -39,9 +37,9 @@ const Subfooter = ({ copyRightText }) => {
           </ul>
         </div>
         <div className="footer__column">
-          <h4>Soporte</h4>
+          <h4>Recursos</h4>
           <ul>
-            <li>Documentación</li>
+            <li>Imagenes</li>
             <li>Foros</li>
             <li>Packs de Idioma</li>
             <li>Estado de Lanzamiento</li>

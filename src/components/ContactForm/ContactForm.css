@@ -114,9 +114,8 @@
 
 @media (min-width: 1200px) {
   .container_contactForm {
-    margin: 120px;
     justify-content: space-between;
-    padding: 50px;
+    padding: 3rem 6rem;
     gap: 15px;
   }
 

@@ -1,14 +1,14 @@
 .container__about {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 6rem 1rem;
 }
 
 @media (min-width: 768px) {
   .container__about {
+    padding: 6rem;
     flex-direction: row;
     justify-content: space-between;
-    padding: 3rem;
     max-width: 2160px;
     margin: auto;
     text-align: left;

@@ -1,4 +1,4 @@
-import photo from '../../assets/Home/fondo-dev.png';
+import photo from '../../assets/Home/code_handler.svg';
 import './EducationInfo.css';
 
 const EducationInfo = ({ educationInfo }) => {
@@ -12,8 +12,9 @@ const EducationInfo = ({ educationInfo }) => {
         <div className="info__education--details">
           {educationInfo.institutions.map((info, index) => (
             <div key={index}>
-              <img className="institution__logo" src={info.logo} alt="logo" />
-              <a href={info.link} target="_blank" rel="noopener noreferrer"></a>
+              <a href={info.link} target="_blank" rel="noopener noreferrer">
+                <img className="institution__logo" src={info.logo} alt="logo" />
+              </a>
               <p>{info.degree}</p>
               <p>{info.date}</p>
             </div>

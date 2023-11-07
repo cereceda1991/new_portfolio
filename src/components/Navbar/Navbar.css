@@ -18,11 +18,29 @@
 
 .nav-links li {
   margin: 0 15px;
+  position: relative;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #fff;
+}
+
+.nav-links li:after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--Text_Light_Accent);
+  display: block;
+  bottom: -8px;
+  position: absolute;
+  transition: width 0.25s, left 0.25s;
+  left: 0;
+}
+
+.nav-links li:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .login-btn {

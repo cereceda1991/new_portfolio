@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
 }
 
 .info__education--image {
@@ -51,18 +51,21 @@
 
 .info__education--details {
   display: flex;
+  justify-content: space-between;
+  text-align: center;
   margin-top: 30px;
   gap: 30px;
 }
 
 .institution__logo {
+  margin-bottom: 30px;
   width: 250px;
   height: 78px;
 }
 
 @media (min-width: 768px) {
   .info__education {
-    padding: 0 6rem;
+    padding: 6rem;
     flex-direction: row;
     max-width: 2160px;
     margin: auto;
