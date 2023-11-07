@@ -18,8 +18,8 @@
   --border-color-secondary: #ff1949;
   --background-gradient: linear-gradient(
     90deg,
-    rgba(212, 4, 47, 1) 0%,
-    rgba(255, 25, 73, 1) 100%
+    rgb(239, 107, 87) 0%,
+    rgb(239, 107, 87, 1) 100%
   );
   --background-gradient-secondary: linear-gradient(to right, #414143, #0009);
   --custom-box-shadow: 1px 4px 20px -2px rgba(0, 0, 0, 0.1);

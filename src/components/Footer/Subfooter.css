@@ -42,8 +42,8 @@
   display: grid;
   place-content: center;
   font-family: inherit;
-  background: #fff;
-  color: var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--Text_Ligth);
   border: none;
   width: 59px;
   height: 59px;

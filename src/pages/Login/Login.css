@@ -1,0 +1,8 @@
+.recovery__password {
+  text-align: right;
+}
+
+.sub__container-login {
+  display: flex;
+  width: 100%;
+}
