@@ -1,71 +1,61 @@
 .container__footer {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  backdrop-filter: blur(10px) brightness(70%) saturate(120%);
+}
+
+.footer__columns {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+}
+
+.footer__column h5 {
+  margin: 16px 0px;
+}
+
+.footer__column ul li {
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.footer__row-copyright {
+  display: flex;
+  width: 100%;
   justify-content: center;
-  align-items: center;
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
-  padding: 0;
-}
-
-.container_title {
-  font-size: 1.5rem;
-  margin-bottom: 120px;
-  text-align: center;
-}
-
-.footer__count-visit {
-  display: none;
+  border-top: outset 1px #333;
+  padding: 30px;
 }
 
 .logo {
-  display: none;
+  display: block;
+  font-weight: 600;
+  font-family: 'Teko', sans-serif;
 }
 
-.footer__copyright {
-  padding: 1rem;
-  text-align: center;
+.logo h3 {
+  cursor: pointer;
+}
+
+.logo sub {
+  font-size: 40px;
+  vertical-align: sub;
+}
+
+.logo h5 {
+  font-family: 'Manrope', sans-serif;
 }
 
 @media (min-width: 1024px) {
-  .footer__copyright {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: red;
+  .container__footer {
+    max-width: 2160px;
+    padding: 0 6rem;
+    margin: auto;
   }
 
-  .footer__count-visit {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--background-color);
-    border-radius: 0.5rem;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: solid 3px #383838;
-  }
-
-  .footer__count-visit h1 {
-    text-align: center;
-    margin: 0.3rem;
-    color: var(--text-color);
-  }
-
-  .footer__count-visit img {
-    width: 100%;
-  }
-
-  .logo {
-    display: block;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: 'Teko', sans-serif;
-  }
-
-  .logo sub {
-    font-size: 40px;
-    vertical-align: sub;
+  .footer__columns {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

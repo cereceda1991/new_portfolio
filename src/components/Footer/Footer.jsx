@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
-import Whatsapp from '../../assets/Home/icon-whatsapp.svg';
-import './ButtonWsp.css';
 import './Footer.css';
 
 import { DataApi } from '../../api/DataApi';
 import Sidebar from '../Sidebar/Sidebar';
-import Subfooter from './Subfooter';
+import { Link } from 'react-router-dom';
+import ButtonWhatsapp from '../ButtonWhatsapp/ButtonWhatsapp';
+import { handleUpClick } from '../../utils/handleUpClick';
 
 const Footer = () => {
   const languageData = DataApi();
@@ -18,20 +17,63 @@ const Footer = () => {
 
   return (
     <>
-      <Subfooter copyRightText={copyRightText} />
       <footer className="container__footer">
-        <section className="button__whatsApp">
-          <a
-            href="https://wa.me/51928263103?text=Hola%20Max,%20vi%20tu%20trabajo%20y%20me%20gustar%C3%ADa%20saber%20mas%20sobre%20ti."
-            className="btn__whatsapp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Whatsapp} alt="Contacto por WhatsApp" />
-          </a>
-        </section>
-        <Sidebar />
+        <div className="footer__columns">
+          <div className="logo">
+            <h3>
+              <Link to="/" onClick={handleUpClick}>
+                M<sub>C</sub>
+              </Link>
+            </h3>
+            <h5>Creando experiencias digitales</h5>
+          </div>
+          <div className="footer__column">
+            <h5>Enlaces del Sitio</h5>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">Sobre mí</Link>
+              </li>
+              <li>
+                <Link to="/projects">Proyectos</Link>
+              </li>
+              <li>
+                <Link to="/gallery">Galería</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contacto</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h5>Recursos Gratuitos</h5>
+            <ul>
+              <li>Imágenes</li>
+              <li>Iconos</li>
+              <li>Diseños en Figma</li>
+              <li>Generadores con IA</li>
+            </ul>
+          </div>
+          <div className="footer__column">
+            <h5>Información de Contacto</h5>
+            <ul>
+              <li>Correo electrónico: cereceda1991@gmail.com</li>
+              <li>Celular: +51 928 263 103</li>
+              <li>
+                <b>HORARIO DE ATENCIÓN</b>
+              </li>
+              <li>Lun - Vie: 9.00 am - 6.00 pm</li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer__row-copyright">
+          <p>{copyRightText}</p>
+        </div>
       </footer>
+      <ButtonWhatsapp />
+      <Sidebar />
     </>
   );
 };

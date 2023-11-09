@@ -76,10 +76,6 @@ label {
   font-size: 12px;
 }
 
-p {
-  font-size: 16px;
-}
-
 a {
   color: var(--text-color);
   text-decoration: none;

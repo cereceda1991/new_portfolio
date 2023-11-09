@@ -2,8 +2,6 @@ import photo from '../../assets/Home/code_handler.svg';
 import './EducationInfo.css';
 
 const EducationInfo = ({ educationInfo }) => {
-  console.log(educationInfo);
-
   return (
     <section className="info__education">
       <div className="info__education--content">

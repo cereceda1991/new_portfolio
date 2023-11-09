@@ -1,12 +1,21 @@
-import SliderProjects from '../../components/Projects/SliderProjects';
+import { DataApi } from '../../api/DataApi';
+import SliderProjects from '../../components/Sliders/SliderProjects';
 import './Projects.css';
 
 const Projects = () => {
+  const languageData = DataApi();
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  const { title, subtitle, projects } = languageData.project;
+
   return (
     <section className="container__projects">
-      <h4>Proyectos</h4>
-      <h3>Explora mis proyectos más recientes</h3>
-      <SliderProjects />
+      <h4>{title}</h4>
+      <h3>{subtitle}</h3>
+      <SliderProjects projects={projects} />
     </section>
   );
 };

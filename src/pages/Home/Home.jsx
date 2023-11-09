@@ -7,6 +7,7 @@ import Contact from '../Contact/Contact';
 import './Home.css';
 import Projects from '../Projects/Projects';
 import { useRef } from 'react';
+import Testimonial from '../../components/Testimonials/Testimonial';
 
 const Home = () => {
   const projectsRef = useRef(null);
@@ -74,6 +75,7 @@ const Home = () => {
       <section ref={projectsRef} id="projects">
         <Projects />
       </section>
+      <Testimonial />
       <Contact />
     </>
   );
