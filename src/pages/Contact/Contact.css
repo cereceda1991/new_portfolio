@@ -1,4 +1,11 @@
 .container__contact {
+  padding: 6rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .container__contact {
     max-width: 2160px;
     margin: auto;
+    padding: 6rem;
+  }
 }

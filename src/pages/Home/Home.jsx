@@ -11,6 +11,8 @@ import Testimonial from '../../components/Testimonials/Testimonial';
 
 const Home = () => {
   const projectsRef = useRef(null);
+  const aboutRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrollToProjects = () => {
     projectsRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -71,12 +73,16 @@ const Home = () => {
           </h4>
         </section>
       </main>
-      <About />
+      <section ref={aboutRef} id="about">
+        <About />
+      </section>
       <section ref={projectsRef} id="projects">
         <Projects />
       </section>
       <Testimonial />
-      <Contact />
+      <section ref={contactRef} id="contact">
+        <Contact />
+      </section>
     </>
   );
 };

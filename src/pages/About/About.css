@@ -7,10 +7,7 @@
 @media (min-width: 768px) {
   .container__about {
     padding: 6rem;
-    flex-direction: row;
-    justify-content: space-between;
     max-width: 2160px;
     margin: auto;
-    text-align: left;
   }
 }
