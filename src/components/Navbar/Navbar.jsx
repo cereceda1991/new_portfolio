@@ -3,6 +3,7 @@ import { FaBars } from 'react-icons/fa';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { handleUpClick } from '../../utils/handleUpClick';
+import LanguageSelector from '../LanguageSelector/LanguageSelector';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -32,6 +33,7 @@ const Navbar = () => {
           </Link>
         </h3>
       </div>
+      <LanguageSelector />
       <ul className={showMenu ? 'nav-links mobile' : 'nav-links'}>
         <li onClick={handleUpClick}>Inicio</li>
         <li onClick={handleAboutClick}>Sobre mi</li>

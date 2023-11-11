@@ -99,19 +99,43 @@
     ]
   },
   "contact": {
-    "title": "¡Trabajemos Juntos!",
-    "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas.",
-    "email": "cereceda1991@gmail.com",
-    "address": "Comas, Lima, Perú",
-    "form": {
-      "fullNameLabel": "Nombre completo:",
-      "fullNamePlaceholder": "Ingresa un nombre",
-      "emailLabel": "Correo electrónico:",
-      "emailPlaceholder": "Ingresa un correo electrónico",
-      "messageLabel": "Mensaje:",
-      "messagePlaceholder": "Ingresa un mensaje",
-      "submitButton": "ENVIAR"
-    }
+      "cards": [
+        {
+          "id": 1,
+          "icon": "FaMapMarkedAlt",
+          "title": "Ubicación",
+          "content": "Comas, Lima, Perú"
+        },
+        {
+          "id": 2,
+          "icon": "FaPhone",
+          "title": "Hacer una llamada",
+          "content": "+51 928 263 103"
+        },
+        {
+          "id": 3,
+          "icon": "FaEnvelopeOpen",
+          "title": "Enviar correo",
+          "content": "cereceda1991@gmail.com"
+        }
+      ],
+      "contactInfo": {
+        "title": "Contacto",
+        "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas."
+      },
+      "form": {
+        "inputName": {
+          "title": "Por favor, ingresa solo letras o espacios",
+          "placeholder": "Ingresa tu nombre"
+        },
+        "inputEmail": {
+          "placeholder": "Ingresa tu correo"
+        },
+        "inputMessage": {
+          "placeholder": "Ingresa tu mensaje..."
+        },
+        "submitButton": "Enviar Mensaje"
+      }
   },
   "footer": {
     "visitorNumberText": "Eres el visitante N°",
@@ -145,33 +169,43 @@
     "subtitle": "Fusionando Pasión Tecnológica con Inspiración Creativa",
     "aboutInfo": [
       "Apasionado por la tecnología y la creatividad impulsada por la ciencia ficción. Encuentro inspiración en la música electrónica para resolver problemas con un enfoque fresco.",
-
       "Mi experiencia como ávido viajero me ha proporcionado una visión global y holística en la resolución de desafíos.",
-
       "Busco aplicar esta amalgama de experiencias para contribuir con soluciones innovadoras. Estoy entusiasmado por colaborar y llevar tus ideas a nuevos horizontes."
     ],
-    "paragraphs": [
-      {
-        "title": "Horas de teoría",
-        "time": 500
-      },
-      {
-        "title": "Horas de práctica",
-        "time": 1440
-      },
-      {
-        "title": "Empresas satisfechas",
-        "time": 10
-      },
-      {
-        "title": "Año de experiencia acumulada",
-        "time": 1
-      },
-      {
-        "title": "Proyectos completados",
-        "time": 25
-      }
-    ],
+      "counterData": {
+        "theoryHours": {
+          "id": 1,
+          "initialValue": 1500,
+          "incrementValue": 50,
+          "label": "Horas de teoría",
+          "speed": 300,
+          "concat": "+"
+        },
+        "practiceHours": {
+          "id": 2,
+          "initialValue": 2500,
+          "incrementValue": 100,
+          "label": "Horas de prácticas",
+          "speed": 300,
+          "concat": "+"
+        },
+        "completedProjects": {
+          "id": 3,
+          "initialValue": 25,
+          "incrementValue": 1,
+          "label": "Proyectos culminados",
+          "speed": 500,
+          "concat": "+"
+        },
+        "satisfiedClients": {
+          "id": 4,
+          "initialValue": 100,
+          "incrementValue": 5,
+          "label": "Clientes satisfechos",
+          "speed": 300,
+          "concat": "%"
+        }
+      },    
     "education": {
       "title": "Mi Camino Educativo",
       "subtitle": "Construyendo Conocimiento con Pasión y Disciplina",
@@ -224,9 +258,8 @@
           }
         ],
         "category": "frontend",
-        "content":
-        "Free-Certify es un proyecto full stack desarrollado con la pila MERN. Se trata de un proyecto de código abierto en el que he estado trabajando como freelancer. Su objetivo principal es simplificar la generación masiva y gratuita de certificados.",
-          "demoUrl": "https://free-certify.vercel.app/",
+        "content": "Free-Certify es un proyecto full stack desarrollado con la pila MERN. Se trata de un proyecto de código abierto en el que he estado trabajando como freelancer. Su objetivo principal es simplificar la generación masiva y gratuita de certificados.",
+        "demoUrl": "https://free-certify.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/weather-app.git"
       },
       {
@@ -256,9 +289,8 @@
           }
         ],
         "category": "frontend",
-        "content":
-        "Intedsur es un proyecto de desarrollo frontend en colaboración con un diseñador UI/UX. Se trata de un proyecto simple creado para un cliente específico, enfocado únicamente en la parte visual y la experiencia del usuario.",
-  
+        "content": "Intedsur es un proyecto de desarrollo frontend en colaboración con un diseñador UI/UX. Se trata de un proyecto simple creado para un cliente específico, enfocado únicamente en la parte visual y la experiencia del usuario.",
+
         "demoUrl": "https://intedsur.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/finallyRickandMorty.git"
       },
@@ -293,9 +325,8 @@
           }
         ],
         "category": "frontend",
-        "content":
-        "Inventra es un proyecto full stack desarrollado con la pila MERN. Su objetivo principal es simplificar y agilizar la gestión de inventarios. Esta solución integral abarca desde el almacenamiento de datos hasta la interfaz de usuario, permitiendo una gestión eficiente y detallada de inventarios.",
-  
+        "content": "Inventra es un proyecto full stack desarrollado con la pila MERN. Su objetivo principal es simplificar y agilizar la gestión de inventarios. Esta solución integral abarca desde el almacenamiento de datos hasta la interfaz de usuario, permitiendo una gestión eficiente y detallada de inventarios.",
+
         "demoUrl": "https://inventra-pe.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/Pokedex_App"
       },
@@ -330,8 +361,7 @@
           }
         ],
         "category": "frontend",
-        "content":
-        "CookMeal es una aplicación que utiliza tecnologías como React, Tailwind y Next.js en el frontend, junto con MongoDB, Mongoose, Express y Node.js en el backend. Su enfoque se centra en generar recetas a través de la API de OpenAI, brindando una experiencia culinaria única y deliciosa.",
+        "content": "CookMeal es una aplicación que utiliza tecnologías como React, Tailwind y Next.js en el frontend, junto con MongoDB, Mongoose, Express y Node.js en el backend. Su enfoque se centra en generar recetas a través de la API de OpenAI, brindando una experiencia culinaria única y deliciosa.",
         "demoUrl": "https://cookmeal.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/ecommerce-react.git"
       },
@@ -354,11 +384,10 @@
           }
         ],
         "category": "frontend",
-        "content":
-        "Verbify es una plataforma educativa enfocada en cursos de inglés, reconocida por su enfoque en el aprendizaje interactivo. Utiliza tecnologías como React, Next.js y CSS en el frontend para proporcionar una experiencia de usuario fluida. En el backend, se emplean Node.js, Express y MongoDB para una gestión eficiente de datos y creación de API, garantizando un almacenamiento escalable.",
+        "content": "Verbify es una plataforma educativa enfocada en cursos de inglés, reconocida por su enfoque en el aprendizaje interactivo. Utiliza tecnologías como React, Next.js y CSS en el frontend para proporcionar una experiencia de usuario fluida. En el backend, se emplean Node.js, Express y MongoDB para una gestión eficiente de datos y creación de API, garantizando un almacenamiento escalable.",
         "demoUrl": "https://verbify.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/Drum-Sounds.git"
-      }     
+      }
     ]
   },
   "sidebar": {
@@ -389,90 +418,90 @@
       }
     ]
   },
-  "testimonial":{
-  "title":"Experiencias Compartidas",
-  "subtitle":"Descubre lo que otros dicen sobre trabajar conmigo",
-  "testimonials": [
-    {
-      "id": 1,
-      "name": "Elizabeth León",
-      "position": "Diseñadora UX/UI",
-      "country": "https://i.ibb.co/Ln0vhg4/AR.png",
-      "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
-      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
-      "linkedinUrl": "https://www.linkedin.com/in/elizabethleonperez/",
-      "githubUrl": "https://github.com/ElizabethLeonPerez"
-    },
-    {
-      "id": 2,
-      "name": "Yenifer Ramírez",
-      "position": "Project Manager",
-      "country": "https://i.ibb.co/276DbnR/VE.png",
-      "testimonial": "Recomiendo a Max con gratitud. Su iniciativa y habilidad para realizar un trabajo excepcional siempre impresionan. Como Project Manager, contar con él fue un verdadero plus para nuestro equipo.",
-      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
-      "linkedinUrl": "https://www.linkedin.com/in/yeniferrosana/",
-      "githubUrl": "https://github.com/yeniferrosana"
-    },
-    {
-      "id": 3,
-      "name": "Cristian Gomez",
-      "position": "Desarrollador Backend",
-      "country": "https://i.ibb.co/Ln0vhg4/AR.png",
-      "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
-      "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
-      "linkedinUrl": "https://www.linkedin.com/in/cristiangomezdev/",
-      "githubUrl": "https://github.com/cristiangomezdev"
-    },
-    {
-      "id": 4,
-      "name": "Erik Perez",
-      "position": "Director académico",
-      "country": "https://i.ibb.co/fxM91tK/MX.png",
-      "testimonial": "Max es un talento excepcional en el desarrollo web. Su habilidad para trabajar tanto en el front-end como en el back-end es impresionante. Siempre cumple con los plazos y produce un código de alta calidad.",
-      "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04BJ55FHSL-e5ce6dd816ec-512",
-      "linkedinUrl": "https://www.linkedin.com/in/erik-perez-alvarez/",
-      "githubUrl": ""
-    },
-    {
-      "id": 5,
-      "name": "Lorenzo Rueda",
-      "position": "Ingeniero de Software",
-      "country": "https://i.ibb.co/276DbnR/VE.png",
-      "testimonial": "Max es un desarrollador altamente competente. Sus habilidades técnicas y su capacidad para resolver problemas son excepcionales. Siempre encuentra soluciones efectivas y entrega resultados de calidad.",
-      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U055HNSNZC0-c4a5215a1474-512",
-      "linkedinUrl": "https://www.linkedin.com/in/lorenzo-rueda-582758263/",
-      "githubUrl": "https://github.com/zightcode"
-    },
-    {
-      "id": 6,
-      "name": "Lucia Pinna",
-      "position": "Diseñadora UX/UI",
-      "country": "https://i.ibb.co/Ln0vhg4/AR.png",
-      "testimonial": "Max es un desarrollador muy talentoso. Su capacidad para comprender tanto el diseño como la implementación técnica es impresionante. Trabajar con él siempre ha sido una experiencia fluida y productiva.",
-      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U05C29Q39HB-0d27fa529f29-512",
-      "linkedinUrl": "https://www.linkedin.com/in/lucia-pinna/",
-      "githubUrl": ""
-    },
-    {
-      "id": 7,
-      "name": "Dario Elguero ",
-      "position": "Desarrollador Frontend",
-      "country": "https://i.ibb.co/Ln0vhg4/AR.png",
-      "testimonial": "He tenido el placer de colaborar con Max en varios proyectos de desarrollo. Su conocimiento y habilidades como desarrollador son sobresalientes. Siempre aporta soluciones técnicas sólidas y cumple con los requisitos del proyecto.",
-      "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U04FMD0KRC1-466d09173211-512",
-      "linkedinUrl": "https://www.linkedin.com/in/dario-elguero/",
-      "githubUrl": "https://github.com/Dario-Elguero"
-    },
-    {
-      "id": 8,
-      "name": "Adlai Bermejo",
-      "position": "Administrador de espacio de trabajo",
-      "country": "https://i.ibb.co/fxM91tK/MX.png",
-      "testimonial": "Me atrevo a hacer una recomendación de Max, ya que es un profesional completamente dedicado a sus objetivos. Trabaja en sus habilidades día a día, se adapta con facilidad a los diferentes procesos y su mejora es notable en cortos lapsos de tiempo. Es un gran desarrollador destacado dentro de su generación.",
-      "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04AWTHE7D2-41cc8d4d50e1-512",
-      "linkedinUrl": "https://www.linkedin.com/in/adlai-bermejo-785b15180/",
-      "githubUrl": ""
-    }
-  ]
-}
+  "testimonial": {
+    "title": "Experiencias Compartidas",
+    "subtitle": "Descubre lo que otros dicen sobre trabajar conmigo",
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Elizabeth León",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "¡El trabajo de Max es increíble! Siempre supera mis expectativas y entrega resultados de alta calidad. Lo recomendaría sin dudarlo.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U054DFJSR2T-3ea5ea0b27f6-512",
+        "linkedinUrl": "https://www.linkedin.com/in/elizabethleonperez/",
+        "githubUrl": "https://github.com/ElizabethLeonPerez"
+      },
+      {
+        "id": 2,
+        "name": "Yenifer Ramírez",
+        "position": "Project Manager",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
+        "testimonial": "Recomiendo a Max con gratitud. Su iniciativa y habilidad para realizar un trabajo excepcional siempre impresionan. Como Project Manager, contar con él fue un verdadero plus para nuestro equipo.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U040WM4U2DC-b96518bf221e-512",
+        "linkedinUrl": "https://www.linkedin.com/in/yeniferrosana/",
+        "githubUrl": "https://github.com/yeniferrosana"
+      },
+      {
+        "id": 3,
+        "name": "Cristian Gomez",
+        "position": "Desarrollador Backend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Trabajar con Max fue una experiencia maravillosa. Es un profesional amigable y siempre dispuesto a escuchar. Definitivamente, estaría encantado de trabajar con él nuevamente en el futuro.",
+        "photoUrl": "https://avatars.githubusercontent.com/u/67226453?v=4",
+        "linkedinUrl": "https://www.linkedin.com/in/cristiangomezdev/",
+        "githubUrl": "https://github.com/cristiangomezdev"
+      },
+      {
+        "id": 4,
+        "name": "Erik Perez",
+        "position": "Director académico",
+        "country": "https://i.ibb.co/fxM91tK/MX.png",
+        "testimonial": "Max es un talento excepcional en el desarrollo web. Su habilidad para trabajar tanto en el front-end como en el back-end es impresionante. Siempre cumple con los plazos y produce un código de alta calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04BJ55FHSL-e5ce6dd816ec-512",
+        "linkedinUrl": "https://www.linkedin.com/in/erik-perez-alvarez/",
+        "githubUrl": ""
+      },
+      {
+        "id": 5,
+        "name": "Lorenzo Rueda",
+        "position": "Ingeniero de Software",
+        "country": "https://i.ibb.co/276DbnR/VE.png",
+        "testimonial": "Max es un desarrollador altamente competente. Sus habilidades técnicas y su capacidad para resolver problemas son excepcionales. Siempre encuentra soluciones efectivas y entrega resultados de calidad.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U055HNSNZC0-c4a5215a1474-512",
+        "linkedinUrl": "https://www.linkedin.com/in/lorenzo-rueda-582758263/",
+        "githubUrl": "https://github.com/zightcode"
+      },
+      {
+        "id": 6,
+        "name": "Lucia Pinna",
+        "position": "Diseñadora UX/UI",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "Max es un desarrollador muy talentoso. Su capacidad para comprender tanto el diseño como la implementación técnica es impresionante. Trabajar con él siempre ha sido una experiencia fluida y productiva.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U05C29Q39HB-0d27fa529f29-512",
+        "linkedinUrl": "https://www.linkedin.com/in/lucia-pinna/",
+        "githubUrl": ""
+      },
+      {
+        "id": 7,
+        "name": "Dario Elguero ",
+        "position": "Desarrollador Frontend",
+        "country": "https://i.ibb.co/Ln0vhg4/AR.png",
+        "testimonial": "He tenido el placer de colaborar con Max en varios proyectos de desarrollo. Su conocimiento y habilidades como desarrollador son sobresalientes. Siempre aporta soluciones técnicas sólidas y cumple con los requisitos del proyecto.",
+        "photoUrl": "https://ca.slack-edge.com/T032Y55Q6VC-U04FMD0KRC1-466d09173211-512",
+        "linkedinUrl": "https://www.linkedin.com/in/dario-elguero/",
+        "githubUrl": "https://github.com/Dario-Elguero"
+      },
+      {
+        "id": 8,
+        "name": "Adlai Bermejo",
+        "position": "Administrador de espacio de trabajo",
+        "country": "https://i.ibb.co/fxM91tK/MX.png",
+        "testimonial": "Me atrevo a hacer una recomendación de Max, ya que es un profesional completamente dedicado a sus objetivos. Trabaja en sus habilidades día a día, se adapta con facilidad a los diferentes procesos y su mejora es notable en cortos lapsos de tiempo. Es un gran desarrollador destacado dentro de su generación.",
+        "photoUrl": "https://ca.slack-edge.com/T04B725G8TB-U04AWTHE7D2-41cc8d4d50e1-512",
+        "linkedinUrl": "https://www.linkedin.com/in/adlai-bermejo-785b15180/",
+        "githubUrl": ""
+      }
+    ]
+  }
 }

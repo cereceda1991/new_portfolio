@@ -4,7 +4,6 @@ import PersonalInfo from './PersonalInfo';
 import './About.css';
 import CounterSection from '../../components/CounterSection/CounterSection';
 import EducationInfo from '../../components/EducationInfo/EducationInfo';
-import Timeline from '../../components/Timeline/Timeline';
 
 const About = () => {
   const languageData = DataApi();
@@ -13,18 +12,18 @@ const About = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { title, subtitle, aboutInfo, education } = languageData.about;
+  const { title, subtitle, aboutInfo, education, counterData } =
+    languageData.about;
 
   return (
     <main className="container__about">
       <PersonalInfo title={title} subtitle={subtitle} aboutInfo={aboutInfo} />
-      <CounterSection />
+      <CounterSection counterData={counterData} />
       <EducationInfo
         title={title}
         subtitle={subtitle}
         educationInfo={education}
       />
-      <Timeline />
     </main>
   );
 };

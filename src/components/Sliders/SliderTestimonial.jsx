@@ -1,5 +1,4 @@
 import Slider from 'react-slick';
-
 import { useRef } from 'react';
 
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
@@ -7,6 +6,7 @@ import shape from '../../assets/Shape.svg';
 
 import './SliderTestimonial.css';
 
+// eslint-disable-next-line react/prop-types
 const SliderTestimonial = ({ testimonials }) => {
   const sliderRef = useRef();
 
@@ -37,8 +37,6 @@ const SliderTestimonial = ({ testimonials }) => {
   const prevSlide = () => {
     sliderRef.current?.slickPrev();
   };
-
-  console.log(testimonials);
 
   return (
     <section>

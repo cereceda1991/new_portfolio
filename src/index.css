@@ -91,24 +91,6 @@ input {
   color: inherit;
 }
 
-select {
-  width: max-content;
-  height: 40px;
-  text-transform: uppercase;
-  font-family: inherit;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-  outline: none;
-  background-color: inherit;
-  color: inherit;
-}
-
-select option {
-  color: var(--text-color);
-  background-color: var(--background-color);
-}
-
 ul,
 li {
   list-style: none;

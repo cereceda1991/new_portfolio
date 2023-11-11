@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { FaMapMarkedAlt, FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
 import './ContactForm.css';
 import ButtonModern from '../ButtonModern/ButtonModern';
+import { ContactFormPropTypes } from '../../utils/prop-types';
 
-function ContactForm() {
+const ContactForm = ({ cards, contactInfo, form }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,56 +21,42 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar alguna acción con los datos del formulario
     console.log(formData);
+  };
+
+  const iconComponents = {
+    FaMapMarkedAlt: <FaMapMarkedAlt size={30} />,
+    FaPhone: <FaPhone size={30} />,
+    FaEnvelopeOpen: <FaEnvelopeOpen size={30} />,
   };
 
   return (
     <main className="container_contactForm">
       <section className="container_contactForm-left">
-        <div className="card_form">
-          <FaMapMarkedAlt className="icon" />
-          <div className="card-content">
-            <h4>Ubicación</h4>
-            <p>Comas, Lima, Perú</p>
+        {cards.map((card) => (
+          <div key={card.id} className="card_form">
+            {iconComponents[card.icon]}
+            <div className="card-content">
+              <h4>{card.title}</h4>
+              <p>{card.content}</p>
+            </div>
           </div>
-        </div>
-        <div className="card_form">
-          <FaPhone className="icon" />
-          <div className="card-content">
-            <h4>Hacer una llamada</h4>
-            <p>+51 928 263 103</p>
-          </div>
-        </div>
-        <div className="card_form">
-          <FaEnvelopeOpen className="icon" />
-          <div className="card-content">
-            <h4>Enviar correo</h4>
-            <a href="mailto:cereceda1991@gmail.com">
-              <p>cereceda1991@gmail.com</p>
-            </a>
-          </div>
-        </div>
+        ))}
       </section>
       <section className="container_contactForm-right">
-        <h5>Contacto</h5>
-        <p>
-          Si deseas obtener más información sobre mis proyectos y servicios, no
-          dudes en contactarme utilizando el formulario de contacto o a través
-          de mis redes sociales. Estoy disponible para responder a tus preguntas
-          y brindarte la información que necesitas.
-        </p>
+        <h5>{contactInfo.title}</h5>
+        <p>{contactInfo.content}</p>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
               type="text"
               pattern="[A-Za-z\s]+"
-              title="Por favor, ingresa solo letras o espacios"
+              title={form.inputName.title}
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
-              placeholder="Ingresa tu nombre"
+              placeholder={form.inputName.placeholder}
               required
             />
           </div>
@@ -80,7 +67,7 @@ function ContactForm() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              placeholder="Ingresa tu correo"
+              placeholder={form.inputEmail.placeholder}
               required
             />
           </div>
@@ -90,15 +77,17 @@ function ContactForm() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              placeholder="Ingresa tu mensaje...."
+              placeholder={form.inputMessage.placeholder}
               required
             />
           </div>
-          <ButtonModern type="submit" content="Enviar Mensaje" />
+          <ButtonModern type="submit" content={form.submitButton} />
         </form>
       </section>
     </main>
   );
-}
+};
+
+ContactForm.propTypes = ContactFormPropTypes;
 
 export default ContactForm;

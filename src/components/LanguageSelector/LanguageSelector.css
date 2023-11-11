@@ -1,0 +1,25 @@
+.language__selector {
+  display: flex;
+  gap: 1rem;
+}
+
+.language__dropdown {
+  display: block;
+  align-items: center;
+  color: #fff;
+}
+
+.language__select {
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  font-family: inherit;
+  color: #000;
+  outline: none;
+  background-color: #f9f5f6;
+  box-shadow: rgba(245, 243, 243, 0.35) 5px 5px 15px;
+}
+
+.language__select option {
+  background-color: #f9f5f6;
+}

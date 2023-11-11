@@ -2,6 +2,7 @@ import photo from '../../assets/Home/foto-home.webp';
 import Halo from '../../components/Halo/Halo';
 import './PersonalInfo.css';
 
+// eslint-disable-next-line react/prop-types
 const PersonalInfo = ({ title, subtitle, aboutInfo }) => {
   return (
     <section className="info__personal">
