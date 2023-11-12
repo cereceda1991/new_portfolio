@@ -4,6 +4,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { handleUpClick } from '../../utils/handleUpClick';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
+import { DataApi } from '../../api/DataApi';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -24,6 +25,16 @@ const Navbar = () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   };
 
+  const languageData = DataApi();
+
+  if (!languageData) {
+    return <div>Cargando datos...</div>;
+  }
+
+  const { links } = languageData.navbar;
+
+  console.log(links);
+
   return (
     <nav className="navbar">
       <div className="logo">
@@ -33,18 +44,13 @@ const Navbar = () => {
           </Link>
         </h3>
       </div>
-      <LanguageSelector />
       <ul className={showMenu ? 'nav-links mobile' : 'nav-links'}>
-        <li onClick={handleUpClick}>Inicio</li>
-        <li onClick={handleAboutClick}>Sobre mi</li>
-        <li onClick={handleProjectsClick}>Proyectos</li>
-        <li onClick={handleContactClick}>Contacto</li>
+        <li onClick={handleUpClick}>{links[0].text}</li>
+        <li onClick={handleAboutClick}>{links[1].text}</li>
+        <li onClick={handleProjectsClick}>{links[2].text}</li>
+        <li onClick={handleContactClick}>{links[3].text}</li>
       </ul>
-      <li>
-        <Link to="/register" onClick={handleUpClick}>
-          <button className="login-btn">Registrate</button>
-        </Link>
-      </li>
+      <LanguageSelector />
       <div className="menu-icon" onClick={handleMenuClick}>
         <FaBars />
       </div>

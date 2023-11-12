@@ -34,23 +34,23 @@ const Home = () => {
         <section className="home__info">
           <h4>{welcome}</h4>
           <h1>
-            <span className="word">
+            <span className="section__name">
               {title.word1.map((letter, index) => (
-                <span key={index} className={letter.className}>
+                <span key={index} className="letter__name">
                   {letter.letter}
                 </span>
               ))}
             </span>
-            <span className="word">
+            <span className="section__name">
               {title.word2.map((letter, index) => (
-                <span key={index} className={letter.className}>
+                <span key={index} className="letter__name">
                   {letter.letter}
                 </span>
               ))}
             </span>
-            <span className="word">
+            <span className="section__name">
               {title.word3.map((letter, index) => (
-                <span key={index} className={letter.className}>
+                <span key={index} className="letter__name">
                   {letter.letter}
                 </span>
               ))}
@@ -68,9 +68,9 @@ const Home = () => {
             />
           </h3>
           <p>{description}</p>
-          <h4 onClick={scrollToProjects}>
+          <h5 onClick={scrollToProjects}>
             <ButtonModern content={buttonText} />
-          </h4>
+          </h5>
         </section>
       </main>
       <section ref={aboutRef} id="about">

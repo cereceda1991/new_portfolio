@@ -4,64 +4,50 @@
     "title": {
       "word1": [
         {
-          "letter": "I",
-          "className": "letter__name"
+          "letter": "I"
         },
         {
-          "letter": "'",
-          "className": "letter__name"
+          "letter": "'"
         },
         {
-          "letter": "m",
-          "className": "letter__name"
+          "letter": "m"
         }
       ],
       "word2": [
         {
-          "letter": "M",
-          "className": "letter__name"
+          "letter": "M"
         },
         {
-          "letter": "a",
-          "className": "letter__name"
+          "letter": "a"
         },
         {
-          "letter": "x",
-          "className": "letter__name"
+          "letter": "x"
         }
       ],
       "word3": [
         {
-          "letter": "C",
-          "className": "letter__name"
+          "letter": "C"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "r",
-          "className": "letter__name"
+          "letter": "r"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "c",
-          "className": "letter__name"
+          "letter": "c"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "d",
-          "className": "letter__name"
+          "letter": "d"
         },
         {
-          "letter": "a",
-          "className": "letter__name"
+          "letter": "a"
         }
       ]
     },
@@ -82,11 +68,7 @@
       },
       {
         "to": "/about",
-        "text": "About Me"
-      },
-      {
-        "to": "/skills",
-        "text": "Skills"
+        "text": "About me"
       },
       {
         "to": "/projects",
@@ -104,7 +86,7 @@
         "id": 1,
         "icon": "FaMapMarkedAlt",
         "title": "Location",
-        "content": "Comas, Lima, Peru"
+        "content": "Lima, Perú"
       },
       {
         "id": 2,
@@ -135,19 +117,6 @@
         "placeholder": "Enter your message..."
       },
       "submitButton": "Send Message"
-    }
-  },
-  "footer": {
-    "visitorNumberText": "Eres el visitante N°",
-    "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados",
-    "title": "Testimonios: Voces de Experiencia",
-    "chat": {
-      "title": "¡Comuniquémonos!",
-      "contentMessageInit": "Ingresa tu nombre",
-      "buttonInit": "Iniciar Chat",
-      "SenderSystem": "Sistema",
-      "MessageSystem": "se ha unido a la conversación",
-      "contentInput": "Escribe un mensaje"
     }
   },
   "skills": {
@@ -501,5 +470,49 @@
         "githubUrl": ""
       }
     ]
+  },
+  "footer": {
+    "slogan": "Creating digital experiences",
+    "footerColumns": [
+      {
+        "title": "Site Links",
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/about",
+            "text": "About me"
+          },
+          {
+            "to": "/projects",
+            "text": "Projects"
+          },
+          {
+            "to": "/gallery",
+            "text": "Gallery"
+          },
+          {
+            "to": "/contact",
+            "text": "Contact"
+          }
+        ]
+      },
+      {
+        "title": "Free Resources",
+        "items": ["Images", "Icons", "Figma Designs", "AI Generators"]
+      },
+      {
+        "title": "Contact Information",
+        "items": [
+          "Email: cereceda1991@gmail.com",
+          "Phone: +51 928 263 103",
+          "BUSINESS HOURS",
+          "Mon - Fri: 9:00 am - 6:00 pm"
+        ]
+      }
+    ],
+    "copyRightText": "© 2023 Max Cereceda. All rights reserved."
   }
 }

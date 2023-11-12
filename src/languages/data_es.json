@@ -4,64 +4,50 @@
     "title": {
       "word1": [
         {
-          "letter": "S",
-          "className": "letter__name"
+          "letter": "S"
         },
         {
-          "letter": "o",
-          "className": "letter__name"
+          "letter": "o"
         },
         {
-          "letter": "y",
-          "className": "letter__name"
+          "letter": "y"
         }
       ],
       "word2": [
         {
-          "letter": "M",
-          "className": "letter__name"
+          "letter": "M"
         },
         {
-          "letter": "a",
-          "className": "letter__name"
+          "letter": "a"
         },
         {
-          "letter": "x",
-          "className": "letter__name"
+          "letter": "x"
         }
       ],
       "word3": [
         {
-          "letter": "C",
-          "className": "letter__name"
+          "letter": "C"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "r",
-          "className": "letter__name"
+          "letter": "r"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "c",
-          "className": "letter__name"
+          "letter": "c"
         },
         {
-          "letter": "e",
-          "className": "letter__name"
+          "letter": "e"
         },
         {
-          "letter": "d",
-          "className": "letter__name"
+          "letter": "d"
         },
         {
-          "letter": "a",
-          "className": "letter__name"
+          "letter": "a"
         }
       ]
     },
@@ -85,10 +71,6 @@
         "text": "Sobre mi"
       },
       {
-        "to": "/skills",
-        "text": "Habilidades"
-      },
-      {
         "to": "/projects",
         "text": "Proyectos"
       },
@@ -99,55 +81,42 @@
     ]
   },
   "contact": {
-      "cards": [
-        {
-          "id": 1,
-          "icon": "FaMapMarkedAlt",
-          "title": "Ubicación",
-          "content": "Comas, Lima, Perú"
-        },
-        {
-          "id": 2,
-          "icon": "FaPhone",
-          "title": "Hacer una llamada",
-          "content": "+51 928 263 103"
-        },
-        {
-          "id": 3,
-          "icon": "FaEnvelopeOpen",
-          "title": "Enviar correo",
-          "content": "cereceda1991@gmail.com"
-        }
-      ],
-      "contactInfo": {
-        "title": "Contacto",
-        "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas."
+    "cards": [
+      {
+        "id": 1,
+        "icon": "FaMapMarkedAlt",
+        "title": "Ubicación",
+        "content": "Lima, Perú"
       },
-      "form": {
-        "inputName": {
-          "title": "Por favor, ingresa solo letras o espacios",
-          "placeholder": "Ingresa tu nombre"
-        },
-        "inputEmail": {
-          "placeholder": "Ingresa tu correo"
-        },
-        "inputMessage": {
-          "placeholder": "Ingresa tu mensaje..."
-        },
-        "submitButton": "Enviar Mensaje"
+      {
+        "id": 2,
+        "icon": "FaPhone",
+        "title": "Hacer una llamada",
+        "content": "+51 928 263 103"
+      },
+      {
+        "id": 3,
+        "icon": "FaEnvelopeOpen",
+        "title": "Enviar correo",
+        "content": "cereceda1991@gmail.com"
       }
-  },
-  "footer": {
-    "visitorNumberText": "Eres el visitante N°",
-    "copyRightText": "© Max Cereceda 2023. Todos los derechos reservados",
-    "title": "Testimonios: Voces de Experiencia",
-    "chat": {
-      "title": "¡Comuniquémonos!",
-      "contentMessageInit": "Ingresa tu nombre",
-      "buttonInit": "Iniciar Chat",
-      "SenderSystem": "Sistema",
-      "MessageSystem": "se ha unido a la conversación",
-      "contentInput": "Escribe un mensaje"
+    ],
+    "contactInfo": {
+      "title": "Contacto",
+      "content": "Si deseas obtener más información sobre mis proyectos y servicios, no dudes en contactarme utilizando el formulario de contacto o a través de mis redes sociales. Estoy disponible para responder a tus preguntas y brindarte la información que necesitas."
+    },
+    "form": {
+      "inputName": {
+        "title": "Por favor, ingresa solo letras o espacios",
+        "placeholder": "Ingresa tu nombre"
+      },
+      "inputEmail": {
+        "placeholder": "Ingresa tu correo"
+      },
+      "inputMessage": {
+        "placeholder": "Ingresa tu mensaje..."
+      },
+      "submitButton": "Enviar Mensaje"
     }
   },
   "skills": {
@@ -172,40 +141,40 @@
       "Mi experiencia como ávido viajero me ha proporcionado una visión global y holística en la resolución de desafíos.",
       "Busco aplicar esta amalgama de experiencias para contribuir con soluciones innovadoras. Estoy entusiasmado por colaborar y llevar tus ideas a nuevos horizontes."
     ],
-      "counterData": {
-        "theoryHours": {
-          "id": 1,
-          "initialValue": 1500,
-          "incrementValue": 50,
-          "label": "Horas de teoría",
-          "speed": 300,
-          "concat": "+"
-        },
-        "practiceHours": {
-          "id": 2,
-          "initialValue": 2500,
-          "incrementValue": 100,
-          "label": "Horas de prácticas",
-          "speed": 300,
-          "concat": "+"
-        },
-        "completedProjects": {
-          "id": 3,
-          "initialValue": 25,
-          "incrementValue": 1,
-          "label": "Proyectos culminados",
-          "speed": 500,
-          "concat": "+"
-        },
-        "satisfiedClients": {
-          "id": 4,
-          "initialValue": 100,
-          "incrementValue": 5,
-          "label": "Clientes satisfechos",
-          "speed": 300,
-          "concat": "%"
-        }
-      },    
+    "counterData": {
+      "theoryHours": {
+        "id": 1,
+        "initialValue": 1500,
+        "incrementValue": 50,
+        "label": "Horas de teoría",
+        "speed": 300,
+        "concat": "+"
+      },
+      "practiceHours": {
+        "id": 2,
+        "initialValue": 2500,
+        "incrementValue": 100,
+        "label": "Horas de prácticas",
+        "speed": 300,
+        "concat": "+"
+      },
+      "completedProjects": {
+        "id": 3,
+        "initialValue": 25,
+        "incrementValue": 1,
+        "label": "Proyectos culminados",
+        "speed": 500,
+        "concat": "+"
+      },
+      "satisfiedClients": {
+        "id": 4,
+        "initialValue": 100,
+        "incrementValue": 5,
+        "label": "Clientes satisfechos",
+        "speed": 300,
+        "concat": "%"
+      }
+    },
     "education": {
       "title": "Mi Camino Educativo",
       "subtitle": "Construyendo Conocimiento con Pasión y Disciplina",
@@ -503,5 +472,54 @@
         "githubUrl": ""
       }
     ]
+  },
+  "footer": {
+    "slogan": "Creando experiencias digitales",
+    "footerColumns": [
+      {
+        "title": "Enlaces del Sitio",
+        "links": [
+          {
+            "to": "/",
+            "text": "Home"
+          },
+          {
+            "to": "/about",
+            "text": "Sobre mí"
+          },
+          {
+            "to": "/projects",
+            "text": "Proyectos"
+          },
+          {
+            "to": "/gallery",
+            "text": "Galería"
+          },
+          {
+            "to": "/contact",
+            "text": "Contacto"
+          }
+        ]
+      },
+      {
+        "title": "Recursos Gratuitos",
+        "items": [
+          "Imágenes",
+          "Iconos",
+          "Diseños en Figma",
+          "Generadores con IA"
+        ]
+      },
+      {
+        "title": "Información de Contacto",
+        "items": [
+          "Correo electrónico: cereceda1991@gmail.com",
+          "Celular: +51 928 263 103",
+          "HORARIO DE ATENCIÓN",
+          "Lun - Vie: 9.00 am - 6.00 pm"
+        ]
+      }
+    ],
+    "copyRightText": "© 2023 Max Cereceda. Todos los derechos reservados."
   }
 }
