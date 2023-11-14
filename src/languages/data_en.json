@@ -493,38 +493,63 @@
         "title": "Site Links",
         "links": [
           {
-            "to": "/",
-            "text": "Home"
+            "text": "Home",
+            "link": "home"
           },
           {
-            "to": "/about",
-            "text": "About me"
+            "text": "About Me",
+            "link": "about"
           },
           {
-            "to": "/projects",
-            "text": "Projects"
+            "text": "Projects",
+            "link": "projects"
           },
           {
-            "to": "/gallery",
-            "text": "Gallery"
-          },
-          {
-            "to": "/contact",
-            "text": "Contact"
+            "text": "Contact",
+            "link": "contact"
           }
         ]
       },
       {
         "title": "Free Resources",
-        "items": ["Images", "Icons", "Figma Designs", "AI Generators"]
+        "links": [
+          {
+            "text": "Images",
+            "link": "https://www.freepik.es/"
+          },
+          {
+            "text": "Icons",
+            "link": "https://react-icons.github.io/react-icons/"
+          },
+          {
+            "text": "Figma Designs",
+            "link": "https://www.freefigmatemplates.com/"
+          },
+          {
+            "text": "AI Generator",
+            "link": "https://playgroundai.com/"
+          }
+        ]
       },
       {
         "title": "Contact Information",
-        "items": [
-          "Email: cereceda1991@gmail.com",
-          "Phone: +51 928 263 103",
-          "BUSINESS HOURS",
-          "Mon - Fri: 9:00 am - 6:00 pm"
+        "links": [
+          {
+            "text": "Email: cereceda1991@gmail.com",
+            "link": "mailto:cereceda1991@gmail.com"
+          },
+          {
+            "text": "Phone: +51 928 263 103",
+            "link": ""
+          },
+          {
+            "text": "Office Hours",
+            "link": ""
+          },
+          {
+            "text": "Mon - Fri: 9.00 am - 6.00 pm",
+            "link": ""
+          }
         ]
       }
     ],

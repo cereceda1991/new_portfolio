@@ -15,6 +15,14 @@ const Footer = () => {
 
   const { slogan, copyRightText, footerColumns } = languageData.footer;
 
+  const handleFooterItemClick = (sectionId) => {
+    // Hacer scroll hacia la sección correspondiente
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <footer className="container__footer">
@@ -27,7 +35,6 @@ const Footer = () => {
             </h3>
             <h5>{slogan}</h5>
           </div>
-
           {footerColumns.map((column, index) => (
             <div key={index} className="footer__column">
               <h5>{column.title}</h5>
@@ -35,7 +42,22 @@ const Footer = () => {
                 {column.links
                   ? column.links.map((link, linkIndex) => (
                       <li key={linkIndex}>
-                        <Link to={link.to}>{link.text}</Link>
+                        {link.link.startsWith('http') ? (
+                          <a
+                            href={link.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {link.text}
+                          </a>
+                        ) : (
+                          <Link
+                            to={``}
+                            onClick={() => handleFooterItemClick(link.link)}
+                          >
+                            {link.text}
+                          </Link>
+                        )}
                       </li>
                     ))
                   : column.items.map((item, itemIndex) => (

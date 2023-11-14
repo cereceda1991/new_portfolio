@@ -499,43 +499,63 @@
         "title": "Enlaces del Sitio",
         "links": [
           {
-            "to": "/",
-            "text": "Home"
+            "text": "Home",
+            "link": "home"
           },
           {
-            "to": "/about",
-            "text": "Sobre mí"
+            "text": "Sobre mí",
+            "link": "about"
           },
           {
-            "to": "/projects",
-            "text": "Proyectos"
+            "text": "Proyectos",
+            "link": "projects"
           },
           {
-            "to": "/gallery",
-            "text": "Galería"
-          },
-          {
-            "to": "/contact",
-            "text": "Contacto"
+            "text": "Contacto",
+            "link": "contact"
           }
         ]
       },
       {
         "title": "Recursos Gratuitos",
-        "items": [
-          "Imágenes",
-          "Iconos",
-          "Diseños en Figma",
-          "Generadores con IA"
+        "links": [
+          {
+            "text": "Imágenes",
+            "link": "https://www.freepik.es/"
+          },
+          {
+            "text": "Iconos",
+            "link": "https://react-icons.github.io/react-icons/"
+          },
+          {
+            "text": "Diseños en Figma",
+            "link": "https://www.freefigmatemplates.com/"
+          },
+          {
+            "text": "Generador con IA",
+            "link": "https://playgroundai.com/"
+          }
         ]
       },
       {
         "title": "Información de Contacto",
-        "items": [
-          "Correo electrónico: cereceda1991@gmail.com",
-          "Celular: +51 928 263 103",
-          "HORARIO DE ATENCIÓN",
-          "Lun - Vie: 9.00 am - 6.00 pm"
+        "links": [
+          {
+            "text": "Correo electrónico: cereceda1991@gmail.com",
+            "link": "mailto:cereceda1991@gmail.com"
+          },
+          {
+            "text": "Celular: +51 928 263 103",
+            "link": ""
+          },
+          {
+            "text": "HORARIO DE ATENCIÓN",
+            "link": ""
+          },
+          {
+            "text": "Lun - Vie: 9.00 am - 6.00 pm",
+            "link": ""
+          }
         ]
       }
     ],
