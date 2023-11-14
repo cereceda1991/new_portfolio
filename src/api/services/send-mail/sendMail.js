@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE = `maxcereceda.up.railway.app/api/v1`;
+const BASE = `https://maxcereceda.up.railway.app/`;
 
 const apiEndpoint = `${BASE}/clients/send-mail`;
 
