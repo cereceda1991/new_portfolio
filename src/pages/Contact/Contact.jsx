@@ -10,7 +10,8 @@ const Contact = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { cards, contactInfo, form, contentDialog } = languageData.contact;
+  const { cards, contactInfo, form, contentDialog, errorsApi } =
+    languageData.contact;
 
   return (
     <section className="container__contact">
@@ -19,6 +20,7 @@ const Contact = () => {
         contactInfo={contactInfo}
         form={form}
         contentDialog={contentDialog}
+        errorsApi={errorsApi}
       />
     </section>
   );

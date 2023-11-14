@@ -6,7 +6,13 @@ import { ContactFormPropTypes } from '../../utils/prop-types';
 import { sendMail } from '../../api/services/send-mail/sendMail';
 import showDialog from '../../utils/showDialog';
 
-const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
+const ContactForm = ({
+  cards,
+  contactInfo,
+  form,
+  contentDialog,
+  errorsApi,
+}) => {
   const [formData, setFormData] = useState({
     fullname: '',
     email: '',
@@ -28,6 +34,11 @@ const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
     });
   };
 
+  const mapErrorMessage = (errorMessage) => {
+    return errorsApi[errorMessage] || errorMessage;
+  };
+
+  // Dentro de tu componente
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -54,10 +65,14 @@ const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
       console.error('Error sending mail:', error);
 
       if (error.errors) {
-        setErrors(error.errors);
+        const mappedErrors = {};
+        for (const field in error.errors) {
+          mappedErrors[field] = error.errors[field].map(mapErrorMessage);
+        }
+        setErrors(mappedErrors);
       } else {
         setErrors({
-          general: error.message || 'Error en la solicitud',
+          general: mapErrorMessage(error.message) || 'Error en la solicitud',
         });
       }
     }
@@ -89,7 +104,6 @@ const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
           <div className="form-group">
             <input
               type="text"
-              pattern="[A-Za-z\s]+"
               title={form.inputName.title}
               id="fullname"
               name="fullname"
@@ -103,7 +117,7 @@ const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
           </div>
           <div className="form-group">
             <input
-              type="email"
+              type="text"
               id="email"
               name="email"
               value={formData.email}

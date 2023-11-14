@@ -125,6 +125,13 @@
       "confirmButtonColor": "#ef6d58",
       "confirmButtonText": "Accept",
       "cancelButtonText": "Close"
+    },
+    "errorsApi": {
+      "This is a required field. Please provide a value.": "This is a required field. Please provide a value.",
+      "Must be between 5 and 40 characters.": "Must be between 5 and 40 characters.",
+      "Invalid characters. Use only letters, spaces, or hyphens.": "Invalid characters. Use only letters, spaces, or hyphens.",
+      "Invalid email address. Please enter a valid one.": "Invalid email address.",
+      "Must be between 10 and 255 characters.": "Must be between 10 and 255 characters."
     }
   },
   "skills": {
