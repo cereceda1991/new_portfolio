@@ -117,8 +117,8 @@
 .error-message {
   position: absolute;
   font-weight: 600;
-  bottom: -15px;
-  font-size: 14px;
+  bottom: -25px;
+  font-size: 13px;
   left: 1rem;
   color: red;
   transition: opacity 0.3s ease-in-out;
