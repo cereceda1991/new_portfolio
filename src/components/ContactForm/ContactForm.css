@@ -118,9 +118,10 @@
   position: absolute;
   font-weight: 600;
   bottom: -15px;
+  font-size: 14px;
   left: 1rem;
   color: red;
-  transition: opacity 0.3s ease-in-out; /* Agregado para una transición suave */
+  transition: opacity 0.3s ease-in-out;
 }
 
 @media (min-width: 1200px) {
@@ -140,5 +141,9 @@
 
   .container_contactForm button {
     width: 250px;
+  }
+
+  .error-message {
+    bottom: -15px;
   }
 }
