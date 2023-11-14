@@ -10,12 +10,14 @@ import { useRef } from 'react';
 import Testimonial from '../../components/Testimonials/Testimonial';
 
 const Home = () => {
-  const projectsRef = useRef(null);
   const aboutRef = useRef(null);
+  const projectsRef = useRef(null);
   const contactRef = useRef(null);
 
   const scrollToProjects = () => {
-    projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   const languageData = DataApi();
@@ -31,7 +33,7 @@ const Home = () => {
   return (
     <>
       <main className="container__home">
-        <section className="home__info">
+        <section className="home__info" id="home">
           <h4>{welcome}</h4>
           <h1>
             <span className="section__name">

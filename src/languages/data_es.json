@@ -64,19 +64,23 @@
     "links": [
       {
         "to": "/",
-        "text": "Inicio"
+        "text": "Inicio",
+        "sectionId": "home"
       },
       {
         "to": "/about",
-        "text": "Sobre mi"
+        "text": "Sobre mi",
+        "sectionId": "about"
       },
       {
         "to": "/projects",
-        "text": "Proyectos"
+        "text": "Proyectos",
+        "sectionId": "projects"
       },
       {
         "to": "/contact",
-        "text": "Contacto"
+        "text": "Contacto",
+        "sectionId": "contact"
       }
     ]
   },

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { handleUpClick } from '../../utils/handleUpClick';
@@ -10,7 +10,15 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleMenuClick = () => {
-    setShowMenu(!showMenu);
+    // Solo cerrar el menú en dispositivos móviles
+    if (window.innerWidth <= 768) {
+      setShowMenu(!showMenu);
+    }
+  };
+
+  const executeFunctionAndToggleMenu = (func) => {
+    func();
+    handleMenuClick();
   };
 
   const handleAboutClick = () => {
@@ -43,14 +51,22 @@ const Navbar = () => {
         </h3>
       </div>
       <ul className={showMenu ? 'nav-links mobile' : 'nav-links'}>
-        <li onClick={handleUpClick}>{links[0].text}</li>
-        <li onClick={handleAboutClick}>{links[1].text}</li>
-        <li onClick={handleProjectsClick}>{links[2].text}</li>
-        <li onClick={handleContactClick}>{links[3].text}</li>
+        <li onClick={() => executeFunctionAndToggleMenu(handleUpClick)}>
+          {links[0].text}
+        </li>
+        <li onClick={() => executeFunctionAndToggleMenu(handleAboutClick)}>
+          {links[1].text}
+        </li>
+        <li onClick={() => executeFunctionAndToggleMenu(handleProjectsClick)}>
+          {links[2].text}
+        </li>
+        <li onClick={() => executeFunctionAndToggleMenu(handleContactClick)}>
+          {links[3].text}
+        </li>
       </ul>
       <LanguageSelector />
       <div className="menu-icon" onClick={handleMenuClick}>
-        <FaBars />
+        {showMenu ? <FaTimes /> : <FaBars />}
       </div>
     </nav>
   );
