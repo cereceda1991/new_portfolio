@@ -68,11 +68,16 @@
       },
       {
         "to": "/about",
-        "text": "About me"
+        "text": "About Me"
       },
       {
         "to": "/projects",
         "text": "Projects"
+      },
+      {
+        "to": "/testimonials",
+        "text": "Testimonials",
+        "sectionId": "testimonials"
       },
       {
         "to": "/contact",

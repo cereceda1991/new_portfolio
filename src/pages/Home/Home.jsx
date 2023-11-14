@@ -13,6 +13,7 @@ const Home = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const testimonialRef = useRef(null);
 
   const scrollToProjects = () => {
     if (projectsRef.current) {
@@ -81,7 +82,9 @@ const Home = () => {
       <section ref={projectsRef} id="projects">
         <Projects />
       </section>
-      <Testimonial />
+      <section ref={testimonialRef} id="testimonials">
+        <Testimonial />
+      </section>
       <section ref={contactRef} id="contact">
         <Contact />
       </section>

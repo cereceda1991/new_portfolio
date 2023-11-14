@@ -78,6 +78,11 @@
         "sectionId": "projects"
       },
       {
+        "to": "/testimonials",
+        "text": "Testimonios",
+        "sectionId": "testimonials"
+      },
+      {
         "to": "/contact",
         "text": "Contacto",
         "sectionId": "contact"

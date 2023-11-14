@@ -1,11 +1,11 @@
-import {
-  FaReact,
-  FaAngular,
-  FaVuejs,
-  FaNode,
-  FaPython,
-  FaJava,
-} from 'react-icons/fa';
+import { BiLogoMongodb } from 'react-icons/bi';
+import { GrMysql } from 'react-icons/gr';
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaGitAlt } from 'react-icons/fa6';
+import { BiLogoTailwindCss } from 'react-icons/bi';
+import { SiPostgresql } from 'react-icons/si';
+import { FaLaravel } from 'react-icons/fa';
+
 import './Halo.css';
 
 const Halo = () => {
@@ -15,19 +15,25 @@ const Halo = () => {
         <FaReact className="icon react" />
       </div>
       <div className="icon-container">
-        <FaAngular className="icon angular" />
+        <FaNodeJs className="icon node" />
       </div>
       <div className="icon-container">
-        <FaVuejs className="icon vue" />
+        <FaLaravel className="icon laravel" />
       </div>
       <div className="icon-container">
-        <FaNode className="icon node" />
+        <BiLogoMongodb className="icon mongo" />
       </div>
       <div className="icon-container">
-        <FaPython className="icon python" />
+        <GrMysql className="icon mysql" />
       </div>
       <div className="icon-container">
-        <FaJava className="icon java" />
+        <SiPostgresql className="icon postgres" />
+      </div>
+      <div className="icon-container">
+        <FaGitAlt className="icon git" />
+      </div>
+      <div className="icon-container">
+        <BiLogoTailwindCss className="icon tailwind" />
       </div>
     </section>
   );
