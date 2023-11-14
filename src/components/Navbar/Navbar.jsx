@@ -33,8 +33,6 @@ const Navbar = () => {
 
   const { links } = languageData.navbar;
 
-  console.log(links);
-
   return (
     <nav className="navbar">
       <div className="logo">
