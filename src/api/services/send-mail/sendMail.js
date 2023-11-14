@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const BASE = `https://maxcereceda.up.railway.app/api/v1`;
+const BASE_URL = `https://maxcereceda.up.railway.app/api/v1`;
 
-const apiEndpoint = `${BASE}/clients/send-mail`;
+const apiEndpoint = `${BASE_URL}/clients/send-mail`;
 
 export const sendMail = async (data) => {
   try {

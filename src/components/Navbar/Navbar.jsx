@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { handleUpClick } from '../../utils/handleUpClick';
 import LanguageSelector from '../LanguageSelector/LanguageSelector';
 import { DataApi } from '../../api/DataApi';
+import './Navbar.css';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
