@@ -10,11 +10,16 @@ const Contact = () => {
     return <div>Cargando datos...</div>;
   }
 
-  const { cards, contactInfo, form } = languageData.contact;
+  const { cards, contactInfo, form, contentDialog } = languageData.contact;
 
   return (
     <section className="container__contact">
-      <ContactForm cards={cards} contactInfo={contactInfo} form={form} />
+      <ContactForm
+        cards={cards}
+        contactInfo={contactInfo}
+        form={form}
+        contentDialog={contentDialog}
+      />
     </section>
   );
 };

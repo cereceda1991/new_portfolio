@@ -3,13 +3,17 @@ import { FaMapMarkedAlt, FaPhone, FaEnvelopeOpen } from 'react-icons/fa';
 import './ContactForm.css';
 import ButtonModern from '../ButtonModern/ButtonModern';
 import { ContactFormPropTypes } from '../../utils/prop-types';
+import { sendMail } from '../../api/services/send-mail/sendMail';
+import showDialog from '../../utils/showDialog';
 
-const ContactForm = ({ cards, contactInfo, form }) => {
+const ContactForm = ({ cards, contactInfo, form, contentDialog }) => {
   const [formData, setFormData] = useState({
-    name: '',
+    fullname: '',
     email: '',
     message: '',
   });
+
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,11 +21,46 @@ const ContactForm = ({ cards, contactInfo, form }) => {
       ...formData,
       [name]: value,
     });
+
+    setErrors({
+      ...errors,
+      [name]: '',
+    });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      const response = await sendMail(formData);
+
+      if (response.status === 'success') {
+        await showDialog(
+          contentDialog.title,
+          contentDialog.text,
+          contentDialog.icon,
+          contentDialog.confirmButtonColor,
+          contentDialog.confirmButtonText,
+          contentDialog.cancelButtonText
+        );
+      }
+      // Restablecer los campos del formulario después del envío exitoso
+      setFormData({
+        fullname: '',
+        email: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error sending mail:', error);
+
+      if (error.errors) {
+        setErrors(error.errors);
+      } else {
+        setErrors({
+          general: error.message || 'Error en la solicitud',
+        });
+      }
+    }
   };
 
   const iconComponents = {
@@ -52,13 +91,15 @@ const ContactForm = ({ cards, contactInfo, form }) => {
               type="text"
               pattern="[A-Za-z\s]+"
               title={form.inputName.title}
-              id="name"
-              name="name"
-              value={formData.name}
+              id="fullname"
+              name="fullname"
+              value={formData.fullname}
               onChange={handleChange}
               placeholder={form.inputName.placeholder}
-              required
             />
+            {errors.fullname && (
+              <div className="error-message">{errors.fullname[0]}</div>
+            )}
           </div>
           <div className="form-group">
             <input
@@ -68,8 +109,10 @@ const ContactForm = ({ cards, contactInfo, form }) => {
               value={formData.email}
               onChange={handleChange}
               placeholder={form.inputEmail.placeholder}
-              required
             />
+            {errors.email && (
+              <div className="error-message">{errors.email[0]}</div>
+            )}
           </div>
           <div className="form-group">
             <textarea
@@ -78,10 +121,15 @@ const ContactForm = ({ cards, contactInfo, form }) => {
               value={formData.message}
               onChange={handleChange}
               placeholder={form.inputMessage.placeholder}
-              required
             />
+            {errors.message && (
+              <div className="error-message">{errors.message[0]}</div>
+            )}
           </div>
           <ButtonModern type="submit" content={form.submitButton} />
+          {errors.general && (
+            <div className="error-message">{errors.general}</div>
+          )}
         </form>
       </section>
     </main>

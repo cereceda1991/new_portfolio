@@ -117,6 +117,14 @@
         "placeholder": "Ingresa tu mensaje..."
       },
       "submitButton": "Enviar Mensaje"
+    },
+    "contentDialog": {
+      "title": "Mensaje enviado con éxito",
+      "text": "Revisaré tu información y me pondré en contacto contigo a la brevedad. Gracias.",
+      "icon": "success",
+      "confirmButtonColor": "#ef6d58",
+      "confirmButtonText": "Aceptar",
+      "cancelButtonText": "Cerrar"
     }
   },
   "skills": {

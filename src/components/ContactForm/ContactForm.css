@@ -71,21 +71,23 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .container_contactForm input[type='text'],
 .container_contactForm input[type='email'],
-.container_contactForm input[type='tel'],
 .container_contactForm textarea {
   border: none;
   border-bottom: 1px solid #e7e7e7;
   outline: none;
   text-indent: 1rem;
+  margin: 1rem 0rem;
   resize: vertical;
   font-family: inherit;
   line-height: 24px;
   font-size: 16px;
   background-color: transparent;
+  transition: border-bottom-color 0.3s ease-in-out;
 }
 
 .container_contactForm textarea {
@@ -110,6 +112,15 @@
   letter-spacing: 2px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.error-message {
+  position: absolute;
+  font-weight: 600;
+  bottom: -15px;
+  left: 1rem;
+  color: red;
+  transition: opacity 0.3s ease-in-out; /* Agregado para una transición suave */
 }
 
 @media (min-width: 1200px) {
