@@ -8,10 +8,12 @@ import './Home.css';
 import Projects from '../Projects/Projects';
 import { useRef } from 'react';
 import Testimonial from '../../components/Testimonials/Testimonial';
+import Services from '../Services/Services';
 
 const Home = () => {
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
+  const servicesRef = useRef(null);
   const contactRef = useRef(null);
   const testimonialRef = useRef(null);
 
@@ -78,6 +80,9 @@ const Home = () => {
       </main>
       <section ref={aboutRef} id="about">
         <About />
+      </section>
+      <section ref={servicesRef} id="services">
+        <Services />
       </section>
       <section ref={projectsRef} id="projects">
         <Projects />

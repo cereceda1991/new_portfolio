@@ -1,0 +1,42 @@
+.container__services {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.container__services h4 {
+  font-weight: 300;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.container__services h4::before {
+  background: var(--secondary-color);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 40px;
+}
+
+.container__services h4::after {
+  background: var(--secondary-color);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 50%;
+  margin-left: 20px;
+  position: absolute;
+  width: 5px;
+}
+
+@media (min-width: 1024px) {
+  .container__services {
+    max-width: 2160px;
+    margin: auto;
+  }
+}

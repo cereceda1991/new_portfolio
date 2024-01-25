@@ -73,6 +73,11 @@
         "sectionId": "about"
       },
       {
+        "to": "/services",
+        "text": "Servicios",
+        "sectionId": "services"
+      },
+      {
         "to": "/projects",
         "text": "Proyectos",
         "sectionId": "projects"
@@ -221,8 +226,8 @@
     }
   },
   "project": {
-    "title": "Mis Proyectos",
-    "subtitle": "Explora mis proyectos más recientes",
+    "title": "Descubre mis Logros",
+    "subtitle": "Innovación Visual y Funcional en Cada Proyecto.",
     "projects": [
       {
         "id": 1,
@@ -380,6 +385,52 @@
         "content": "Verbify es una plataforma educativa enfocada en cursos de inglés, reconocida por su enfoque en el aprendizaje interactivo. Utiliza tecnologías como React, Next.js y CSS en el frontend para proporcionar una experiencia de usuario fluida. En el backend, se emplean Node.js, Express y MongoDB para una gestión eficiente de datos y creación de API, garantizando un almacenamiento escalable.",
         "demoUrl": "https://verbify.vercel.app/",
         "codeUrl": "https://github.com/cereceda1991/Drum-Sounds.git"
+      }
+    ]
+  },
+  "service": {
+    "title": "Servicios de Desarrollo Web Completo",
+    "subtitle": "Impulsa tu presencia en línea con nuestras soluciones especializadas",
+    "services": [
+      {
+        "id": 1,
+        "title": "Sitios Web a Medida",
+        "imagePath": "/services/fullstack-web.png",
+        "content": "Creamos sitios web personalizados que se adaptan perfectamente a tus necesidades. Nos encargamos tanto de la apariencia visual como de la funcionalidad interna, para que tu presencia en línea destaque.",
+        "buttonText": "Cotizar ",
+        "linkButton": "contact"
+      },
+      {
+        "id": 2,
+        "title": "Aplicaciones Móviles para Todos",
+        "imagePath": "/services/react-native.png",
+        "content": "Desarrollamos aplicaciones móviles que funcionan tanto en iOS como en Android. Con tecnología avanzada como React Native, creamos experiencias móviles eficientes y atractivas para tus usuarios.",
+        "buttonText": "Cotizar ",
+        "linkButton": "contact"
+      },
+      {
+        "id": 3,
+        "title": "Conexión Sin Fisuras",
+        "imagePath": "/services/restful-api.png",
+        "content": "Facilitamos la comunicación entre las diferentes partes de tu aplicación, asegurando que todo funcione sin problemas. Diseñamos y desarrollamos interfaces eficientes que conectan el lado del usuario con el motor de tu aplicación.",
+        "buttonText": "Cotizar ",
+        "linkButton": "contact"
+      },
+      {
+        "id": 4,
+        "title": "Almacenamiento Eficiente de Datos",
+        "imagePath": "/services/mongodb.png",
+        "content": "Implementamos bases de datos que almacenan y administran datos de manera eficiente. Utilizando tecnologías como MongoDB, garantizamos soluciones sólidas y escalables para gestionar la información de tu aplicación.",
+        "buttonText": "Cotizar ",
+        "linkButton": "contact"
+      },
+      {
+        "id": 5,
+        "title": "Seguridad y Protección",
+        "imagePath": "/services/security-testing.png",
+        "content": "Nos preocupamos por la seguridad de tus aplicaciones web. Utilizamos prácticas avanzadas de desarrollo seguro y realizamos pruebas exhaustivas para protegerte contra posibles vulnerabilidades y garantizar la integridad de tus datos.",
+        "buttonText": "Cotizar",
+        "linkButton": "contact"
       }
     ]
   },

@@ -35,6 +35,10 @@ const Navbar = () => {
       .scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleServicesClick = () => {
+    document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
+  };
+
   const handleContactClick = () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   };
@@ -63,16 +67,19 @@ const Navbar = () => {
         <li onClick={() => executeFunctionAndToggleMenu(handleAboutClick)}>
           {links[1].text}
         </li>
-        <li onClick={() => executeFunctionAndToggleMenu(handleProjectsClick)}>
+        <li onClick={() => executeFunctionAndToggleMenu(handleServicesClick)}>
           {links[2].text}
+        </li>
+        <li onClick={() => executeFunctionAndToggleMenu(handleProjectsClick)}>
+          {links[3].text}
         </li>
         <li
           onClick={() => executeFunctionAndToggleMenu(handleTestimonialsClick)}
         >
-          {links[3].text}
+          {links[4].text}
         </li>
         <li onClick={() => executeFunctionAndToggleMenu(handleContactClick)}>
-          {links[4].text}
+          {links[5].text}
         </li>
       </ul>
       <LanguageSelector />
