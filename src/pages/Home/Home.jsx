@@ -15,9 +15,9 @@ const Home = () => {
   const contactRef = useRef(null);
   const testimonialRef = useRef(null);
 
-  const scrollToProjects = () => {
-    if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -71,7 +71,7 @@ const Home = () => {
             />
           </h3>
           <p>{description}</p>
-          <h5 onClick={scrollToProjects}>
+          <h5 onClick={scrollToContact}>
             <ButtonModern content={buttonText} />
           </h5>
         </section>
