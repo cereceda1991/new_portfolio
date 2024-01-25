@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = `https://maxcereceda.up.railway.app/api/v1`;
+const BASE_URL = `https://wonderful-nona-cereceda.koyeb.app/api/v1`;
 
 const apiEndpoint = `${BASE_URL}/clients/send-mail`;
 
