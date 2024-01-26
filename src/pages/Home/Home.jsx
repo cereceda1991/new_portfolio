@@ -17,10 +17,8 @@ const Home = () => {
   const contactRef = useRef(null);
   const testimonialRef = useRef(null);
 
-  const scrollToContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleContactClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
   };
 
   const languageData = DataApi();
@@ -73,7 +71,7 @@ const Home = () => {
             />
           </h3>
           <p>{description}</p>
-          <h5 onClick={scrollToContact}>
+          <h5 onClick={handleContactClick}>
             <ButtonModern content={buttonText} />
           </h5>
         </section>

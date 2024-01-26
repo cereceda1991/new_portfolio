@@ -1,4 +1,5 @@
 import { DataApi } from '../../api/DataApi';
+import ServicesCard from '../../components/Cards/ServicesCard';
 import SliderServices from '../../components/Sliders/SliderServices';
 import './Services.css';
 
@@ -15,7 +16,7 @@ const Services = () => {
     <section className="container__services">
       <h4>{title}</h4>
       <h3>{subtitle}</h3>
-      <SliderServices services={services} />
+      <ServicesCard services={services} />
     </section>
   );
 };

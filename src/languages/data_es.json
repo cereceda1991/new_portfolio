@@ -395,41 +395,46 @@
       {
         "id": 1,
         "title": "Sitios Web a Medida",
-        "imagePath": "/services/fullstack-web.png",
+        "iconComponent": "/icons/1.svg",
+        "imagePath": "/services/1.png",
         "content": "Creamos sitios web personalizados que se adaptan perfectamente a tus necesidades. Nos encargamos tanto de la apariencia visual como de la funcionalidad interna, para que tu presencia en línea destaque.",
-        "buttonText": "Cotizar ",
+        "buttonText": "Solicitar Cotización ",
         "linkButton": "contact"
       },
       {
         "id": 2,
         "title": "Aplicaciones Móviles para Todos",
-        "imagePath": "/services/react-native.png",
+        "iconComponent": "/icons/2.svg",
+        "imagePath": "/services/2.png",
         "content": "Desarrollamos aplicaciones móviles que funcionan tanto en iOS como en Android. Con tecnología avanzada como React Native, creamos experiencias móviles eficientes y atractivas para tus usuarios.",
-        "buttonText": "Cotizar ",
+        "buttonText": "Solicitar Cotización ",
         "linkButton": "contact"
       },
       {
         "id": 3,
         "title": "Conexión Sin Fisuras",
-        "imagePath": "/services/restful-api.png",
+        "iconComponent": "/icons/3.svg",
+        "imagePath": "/services/3.png",
         "content": "Facilitamos la comunicación entre las diferentes partes de tu aplicación, asegurando que todo funcione sin problemas. Diseñamos y desarrollamos interfaces eficientes que conectan el lado del usuario con el motor de tu aplicación.",
-        "buttonText": "Cotizar ",
+        "buttonText": "Solicitar Cotización ",
         "linkButton": "contact"
       },
       {
         "id": 4,
         "title": "Almacenamiento Eficiente de Datos",
-        "imagePath": "/services/mongodb.png",
+        "iconComponent": "/icons/4.svg",
+        "imagePath": "/services/4.png",
         "content": "Implementamos bases de datos que almacenan y administran datos de manera eficiente. Utilizando tecnologías como MongoDB, garantizamos soluciones sólidas y escalables para gestionar la información de tu aplicación.",
-        "buttonText": "Cotizar ",
+        "buttonText": "Solicitar Cotización ",
         "linkButton": "contact"
       },
       {
         "id": 5,
         "title": "Seguridad y Protección",
-        "imagePath": "/services/security-testing.png",
+        "iconComponent": "/icons/5.svg",
+        "imagePath": "/services/5.png",
         "content": "Nos preocupamos por la seguridad de tus aplicaciones web. Utilizamos prácticas avanzadas de desarrollo seguro y realizamos pruebas exhaustivas para protegerte contra posibles vulnerabilidades y garantizar la integridad de tus datos.",
-        "buttonText": "Cotizar",
+        "buttonText": "Solicitar Cotización",
         "linkButton": "contact"
       }
     ]

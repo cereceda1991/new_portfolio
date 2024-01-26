@@ -389,35 +389,40 @@
       {
         "id": 1,
         "title": "Customized Websites",
-        "imagePath": "/services/fullstack-web.png",
+        "iconComponent": "/icons/1.svg",
+        "imagePath": "/services/1.png",
         "content": "We create custom websites that perfectly fit your needs. We take care of both the visual appearance and internal functionality, ensuring that your online presence stands out.",
         "buttonText": "Request a quote"
       },
       {
         "id": 2,
         "title": "Mobile Applications for Everyone",
-        "imagePath": "/services/react-native.png",
+        "iconComponent": "/icons/2.svg",
+        "imagePath": "/services/2.png",
         "content": "We develop mobile applications that work on both iOS and Android. With advanced technology like React Native, we create efficient and attractive mobile experiences for your users.",
         "buttonText": "Request a quote"
       },
       {
         "id": 3,
         "title": "Seamless Connection",
-        "imagePath": "/services/restful-api.png",
+        "iconComponent": "/icons/3.svg",
+        "imagePath": "/services/3.png",
         "content": "We facilitate communication between different parts of your application, ensuring everything runs smoothly. We design and develop efficient interfaces that connect the user side with the engine of your application.",
         "buttonText": "Request a quote"
       },
       {
         "id": 4,
         "title": "Efficient Data Storage",
-        "imagePath": "/services/mongodb.png",
+        "iconComponent": "/icons/4.svg",
+        "imagePath": "/services/4.png",
         "content": "We implement databases that store and manage data efficiently. Using technologies like MongoDB, we ensure robust and scalable solutions for managing your application's information.",
         "buttonText": "Request a quote"
       },
       {
         "id": 5,
         "title": "Web Security and Protection",
-        "imagePath": "/services/security-testing.png",
+        "iconComponent": "/icons/5.svg",
+        "imagePath": "/services/5.png",
         "content": "We care about the security of your web applications. We employ advanced secure development practices and conduct thorough testing to protect you against potential vulnerabilities and ensure the integrity of your data.",
         "buttonText": "Request a quote"
       }

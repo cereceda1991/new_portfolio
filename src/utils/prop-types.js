@@ -34,3 +34,9 @@ export const ContactFormPropTypes = {
     submitButton: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export const CardPropTypes = {
+  title: PropTypes.string.isRequired,
+  imageUrl: PropTypes.string.isRequired,
+  icon: PropTypes.node.isRequired,
+};
