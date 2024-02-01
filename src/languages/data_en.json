@@ -170,7 +170,7 @@
       "theoryHours": {
         "id": 1,
         "initialValue": 1500,
-        "incrementValue": 50,
+        "incrementValue": 150,
         "label": "Theory Hours",
         "speed": 300,
         "concat": "+"
@@ -178,7 +178,7 @@
       "practiceHours": {
         "id": 2,
         "initialValue": 2500,
-        "incrementValue": 100,
+        "incrementValue": 150,
         "label": "Practice Hours",
         "speed": 300,
         "concat": "+"
@@ -186,7 +186,7 @@
       "completedProjects": {
         "id": 3,
         "initialValue": 25,
-        "incrementValue": 1,
+        "incrementValue": 5,
         "label": "Completed Projects",
         "speed": 500,
         "concat": "+"
@@ -194,7 +194,7 @@
       "satisfiedClients": {
         "id": 4,
         "initialValue": 100,
-        "incrementValue": 5,
+        "incrementValue": 10,
         "label": "Satisfied Clients",
         "speed": 300,
         "concat": "%"

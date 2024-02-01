@@ -1,12 +1,5 @@
 import PropTypes from 'prop-types';
 
-export const CounterPropTypes = {
-  initialValue: PropTypes.number.isRequired,
-  incrementValue: PropTypes.number.isRequired,
-  label: PropTypes.string.isRequired,
-  speed: PropTypes.number.isRequired,
-};
-
 export const ContactFormPropTypes = {
   cards: PropTypes.arrayOf(
     PropTypes.shape({
@@ -39,4 +32,12 @@ export const CardPropTypes = {
   title: PropTypes.string.isRequired,
   imageUrl: PropTypes.string.isRequired,
   icon: PropTypes.node.isRequired,
+};
+
+export const CounterPropTypes = {
+  initialValue: PropTypes.number.isRequired,
+  incrementValue: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
+  speed: PropTypes.number.isRequired,
+  concat: PropTypes.node.isRequired,
 };

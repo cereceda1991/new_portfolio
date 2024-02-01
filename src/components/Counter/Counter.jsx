@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './Counter.css';
+import { CounterPropTypes } from '../../utils/prop-types';
 
 const Counter = ({ initialValue, incrementValue, label, speed, concat }) => {
   const [count, setCount] = useState(0);
@@ -7,16 +8,21 @@ const Counter = ({ initialValue, incrementValue, label, speed, concat }) => {
   useEffect(() => {
     const timer = setInterval(() => {
       if (count < initialValue) {
-        setCount(count + incrementValue);
+        setCount((prevCount) => prevCount + incrementValue);
       } else {
         clearInterval(timer);
       }
     }, speed);
+
     return () => clearInterval(timer);
   }, [count, initialValue, incrementValue, speed]);
 
+  const handleMouseEnter = () => {
+    setCount(0); // Reinicia el contador al hacer hover
+  };
+
   return (
-    <div className="counter">
+    <div className="counter" onMouseEnter={handleMouseEnter}>
       <h2>
         {count}
         {concat}
@@ -25,5 +31,7 @@ const Counter = ({ initialValue, incrementValue, label, speed, concat }) => {
     </div>
   );
 };
+
+Counter.propTypes = CounterPropTypes;
 
 export default Counter;

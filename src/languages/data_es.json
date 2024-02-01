@@ -174,7 +174,7 @@
       "theoryHours": {
         "id": 1,
         "initialValue": 1500,
-        "incrementValue": 50,
+        "incrementValue": 150,
         "label": "Horas de teoría",
         "speed": 300,
         "concat": "+"
@@ -182,7 +182,7 @@
       "practiceHours": {
         "id": 2,
         "initialValue": 2500,
-        "incrementValue": 100,
+        "incrementValue": 150,
         "label": "Horas de prácticas",
         "speed": 300,
         "concat": "+"
@@ -190,15 +190,15 @@
       "completedProjects": {
         "id": 3,
         "initialValue": 25,
-        "incrementValue": 1,
+        "incrementValue": 5,
         "label": "Proyectos culminados",
-        "speed": 500,
+        "speed": 300,
         "concat": "+"
       },
       "satisfiedClients": {
         "id": 4,
         "initialValue": 100,
-        "incrementValue": 5,
+        "incrementValue": 10,
         "label": "Clientes satisfechos",
         "speed": 300,
         "concat": "%"
